@@ -48,6 +48,8 @@ backgroundSize: contain
 -->
 
 ---
+transition: fade
+---
 
 # DevEx disasters...
 
@@ -62,6 +64,7 @@ layout: image-right
 image: /images/slides/new-feature-fail.gif
 backgroundSize: contain
 class: my-cool-content-on-the-left
+transition: fade
 ---
 
 # Bad DevEx
@@ -81,6 +84,7 @@ layout: image-right
 image: /images/slides/api-fail.png
 backgroundSize: contain
 class: my-cool-content-on-the-left
+transition: fade
 ---
 
 # Bad DevEx
@@ -100,6 +104,7 @@ layout: image-right
 image: /images/slides/missing-docs-fail.png
 backgroundSize: contain
 class: my-cool-content-on-the-left
+transition: fade
 ---
 
 # Bad DevEx
@@ -120,6 +125,7 @@ layout: image-right
 image: /images/slides/missing-examples-fail.png
 backgroundSize: contain
 class: my-cool-content-on-the-left
+transition: fade
 ---
 
 # Bad DevEx
