@@ -267,7 +267,7 @@ DevEx is such an integral part of the entire development lifecycle - not just if
 # Developer Experience != Developer Productivity
 
 <span style="background-color: #ffffff; color: #000000; font-size: 1.5em; padding: 10px; border-radius: 5px;">
-  <emojione-musical-notes />More than a metric....<emojione-musical-notes />
+🎵 More than a metric.... 🎵
 </span>
 
 <!--
