@@ -374,7 +374,7 @@ So all of this interest in DevEx isn't a new concept - but is largely driven by 
 
 ---
 
-<font class="text-3xl font-bold gradient-text mb-4">From Lines of Code to Value Streams</font>
+<h2 class="text-3xl font-bold text-center gradient-text mb-4">From Lines of Code to Value Streams</h2>
 
 <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -450,34 +450,33 @@ I'm going to take a look at each of these frameworks in a bit more detail, and h
 
 ---
 
-<div class="text-center mb-1">
-    <h3 class="text-3xl font-bold gradient-text">Deep Dive: DORA's Four Keys</h3>
-</div>
+<h3 class="text-3xl font-bold gradient-text">Deep Dive: DORA's Four Keys</h3>
+
 <div class="max-w-4x1 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
         <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Deployment Frequency</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow" style="font-size: 0.8rem;">How often code is deployed to production. High frequency indicates agile processes and small batch sizes.</p>
+        <p class="text-slate-600 text-sm mb-4 flex-grow">How often code is deployed to production. High frequency indicates agile processes and small batch sizes.</p>
         <div class="chart-container h-48">
           <img src="/images/slides/deploy-freq.png">
         </div>
     </div>
     <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
         <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Lead Time for Changes</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow" style="font-size: 0.8rem;">The time it takes for a commit to get into production. Short lead times signify efficient CI/CD pipelines.</p>
+        <p class="text-slate-600 text-sm mb-4 flex-grow">The time it takes for a commit to get into production. Short lead times signify efficient CI/CD pipelines.</p>
         <div class="chart-container h-48">
           <img src="/images/slides/lead-time-for-changes.png">
         </div>
     </div>
     <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
         <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Change Failure Rate</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow" style="font-size: 0.8rem;">The percentage of deployments causing a failure in production. A low rate indicates high quality and robust testing.</p>
+        <p class="text-slate-600 text-sm mb-4 flex-grow">The percentage of deployments causing a failure in production. A low rate indicates high quality and robust testing.</p>
         <div class="chart-container h-48">
           <img src="/images/slides/change-failure-rate.png">
         </div>
     </div>
     <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
         <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Time to Restore Service</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow" style="font-size: 0.8rem;">How long it takes to recover from a failure in production. A low time indicates high system resilience.</p>
+        <p class="text-slate-600 text-sm mb-4 flex-grow">How long it takes to recover from a failure in production. A low time indicates high system resilience.</p>
         <div class="chart-container h-48">
           <img src="/images/slides/time-to-restore-service.png">
         </div>
