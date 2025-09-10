@@ -445,110 +445,7 @@ Recognizing DORA's limitations, the SPACE framework introduced a holistic, human
 [click]2024: GetDX Core 4 Unifies for Business Impact
 To resolve market confusion, GetDX Core 4 was created to be a practical, prescriptive framework. It unifies concepts from DORA and SPACE and, most importantly, creates a direct link between engineering efforts and tangible business outcomes like ROI and revenue.
 
-I'm going to take a look at each of these frameworks in a bit more detail, and how they relate to each other, and then we'll look at how to create a more holistic view of developer experience that works with these frameworks.
--->
-
----
-
-<h3 class="text-3xl font-bold gradient-text">Deep Dive: DORA's Four Keys</h3>
-
-<div class="max-w-4x1 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-    <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
-        <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Deployment Frequency</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow">How often code is deployed to production. High frequency indicates agile processes and small batch sizes.</p>
-        <div class="chart-container h-48">
-          <img src="/images/slides/deploy-freq.png">
-        </div>
-    </div>
-    <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
-        <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Lead Time for Changes</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow">The time it takes for a commit to get into production. Short lead times signify efficient CI/CD pipelines.</p>
-        <div class="chart-container h-48">
-          <img src="/images/slides/lead-time-for-changes.png">
-        </div>
-    </div>
-    <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
-        <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Change Failure Rate</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow">The percentage of deployments causing a failure in production. A low rate indicates high quality and robust testing.</p>
-        <div class="chart-container h-48">
-          <img src="/images/slides/change-failure-rate.png">
-        </div>
-    </div>
-    <div class="bg-white p-2 rounded-lg shadow-lg text-center flex flex-col">
-        <h4 class="text-yellow-600 text-xl font-bold mb-2" style="margin: 1rem 0 0 0rem;">Time to Restore Service</h4>
-        <p class="text-slate-600 text-sm mb-4 flex-grow">How long it takes to recover from a failure in production. A low time indicates high system resilience.</p>
-        <div class="chart-container h-48">
-          <img src="/images/slides/time-to-restore-service.png">
-        </div>
-    </div>
-</div>
-
-<!--
-DORA measures the health of the software delivery pipeline through four key metrics (Deployment Frequency, Lead Time for Change, Change Failure Rate, and Time to Restore Service), with the goal of balancing speed with stability. Elite performers excel at both, deploying frequently and reliably. It's gone through a number of iterations, with more and more insights being added to the framework.
--->
-
----
-layout: two-cols-header
-class: text-center
-layoutClass: gap-4
----
-
-<div class="text-center mb-1">
-    <h3 class="text-3xl font-bold gradient-text">Deep Dive: The SPACE Framework</h3>
-</div>
-
-::left::
-
-### The 5 Dimensions of Productivity
-
-<ul class="space-y-3 text-left">
-  <li class="flex items-start" style="line-height: 1em;"><span class="font-bold text-[#005f73] mr-2">S</span> <div style="font-size: 0.8em;"><b>Satisfaction & Well-being:</b> How happy and healthy developers are.</div></li>
-  <li class="flex items-start" style="line-height: 1em;"><span class="font-bold text-[#0a9396] mr-2">P</span> <div style="font-size: 0.8em;"><b>Performance:</b> The outcome and quality of the work produced.</div></li>
-  <li class="flex items-start" style="line-height: 1em;"><span class="font-bold text-[#94d2bd] mr-2">A</span> <div style="font-size: 0.8em;"><b>Activity:</b> The count of development outputs (used with caution).</div></li>
-  <li class="flex items-start" style="line-height: 1em;"><span class="font-bold text-[#ee9b00] mr-2">C</span> <div style="font-size: 0.8em;"><b>Communication & Collaboration:</b> How well teams work together.</div></li>
-  <li class="flex items-start" style="line-height: 1em;"><span class="font-bold text-[#ca6702] mr-2">E</span> <div style="font-size: 0.8em;"><b>Efficiency & Flow:</b> The ability to complete work without friction or delays.</div></li>
-</ul>
-
-::right::
-
-![alt text](/images/slides/space-5-dimensions.png){style="width: 100%; height: auto; margin: auto; background-color: #ffffff;"}
-
-
-<!--
-SPACE argues that productivity is multi-dimensional and human-centric. It provides a menu of five dimensions (Satisfaction & Well-being, Performance, Activity, Communication & Collaboration, and Efficiency & Flow) to create a holistic view of engineering health beyond just delivery metrics. The radar chart shows two hypothetical teams. The "Balanced Team" shows healthy scores across all dimensions, while the "Struggling Team" excels in Activity but suffers from low Satisfaction and poor Collaboration, indicating a high risk of burnout.
--->
-
----
-layout: two-cols-header
-class: text-center
-layoutClass: gap-4
----
-
-<div class="text-center mb-1">
-    <h3 class="text-3xl font-bold gradient-text">Deep Dive: GetDX Core 4k</h3>
-</div>
-
-::left::
-
-![alt text](/images/slides/getdx-four-pillars.png)
-
-::right::
-
-### The Four Pillars of Impact
-
-<div class="p-8">
-    <ul class="space-y-3 mb-6 text-left">
-        <li class="flex items-start" style="line-height: 1em;"><span class="text-2xl mr-3">🚀</span> <div style="font-size: 0.8em;"><b>Speed:</b> Measures development throughput and velocity.</div></li>
-        <li class="flex items-start" style="line-height: 1em;"><span class="text-2xl mr-3">🎯</span> <div style="font-size: 0.8em;"><b>Effectiveness:</b> Assesses developer experience and work outcomes.</div></li>
-        <li class="flex items-start" style="line-height: 1em;"><span class="text-2xl mr-3">✅</span> <div style="font-size: 0.8em;"><b>Quality:</b> Measures software stability and reliability.</div></li>
-        <li class="flex items-start" style="line-height: 1em;"><span class="text-2xl mr-3">💰</span> <div style="font-size: 0.8em;"><b>Impact:</b> Directly connects engineering to business value and ROI.</div></li>
-    </ul>
-</div>
-
-<!--
-GetDX Core 4 is a prescriptive framework designed to unify DORA and SPACE concepts, creating a shared language from the C-suite to engineering teams by linking work directly to business impact.
-
-A key metric in the 'Impact' pillar is the allocation of engineering effort. The chart visualizes how three different companies balance their time between building new, value-creating capabilities versus essential maintenance, bug fixes, and paying down technical debt.
+Let's look at these side by side, and then we'll look at how to create a more holistic view of developer experience that works with these frameworks.
 -->
 
 ---
@@ -695,6 +592,7 @@ here are 5 actionable and specific strategies a software development team can im
 
 ---
 
+## So what do we measure?
 ### Avoid the Gamification Trap
 #### Use Metrics for Improvement, Not Judgment
 
