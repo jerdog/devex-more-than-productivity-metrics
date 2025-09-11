@@ -230,6 +230,17 @@ My name is Jeremy Meiss, and I am the Director of Developer Experience and Devel
 -->
 
 ---
+layout: image
+image: "/images/slides/devex-integral-dev-lifecycle.jpg"
+---
+
+<!--
+DevEx is such an integral part of the entire development lifecycle - not just if you're developing tools for use internally, choosing off-the-shelf tools to use, or creating products for other developers and companies to use. That means that the ease of use, reliability, how accessible and understandable documentation, how efficient the build processes are, the effectiveness of testing frameworks, and the smoothness of deployment procedures all have an impact on the overall dev experience.
+
+So let's start with some definitions between Developer Experience and Developer Productivity.
+-->
+
+---
 layout: two-cols-header
 class: text-center
 layoutClass: gap-8
@@ -253,13 +264,8 @@ layoutClass: gap-8
 
 - [LinearB](https://linearb.io/blog/developer-productivity)
 
----
-layout: image
-image: "/images/slides/devex-integral-dev-lifecycle.jpg"
----
-
 <!--
-DevEx is such an integral part of the entire development lifecycle - not just if you're developing tools for use internally, choosing off-the-shelf tools to use, or creating products for other developers and companies to use. That means that the ease of use, reliability, how accessible and understandable documentation, how efficient the build processes are, the effectiveness of testing frameworks, and the smoothness of deployment procedures all have an impact on the overall dev experience.
+Developer Experience is the journey of developers as they learn and deploy technology, and Developer Productivity is how effective and efficient devs are at producing.
 -->
 
 ---
@@ -315,7 +321,7 @@ layoutClass: gap-8
 </v-click>
 
 <!--
-Over the past few years, there's been a lot of talk about Developer Productivity. But it's important to understand that Developer Productivity and Developer Experience are not the same thing, even though a lot of companies selling you something would like you to think that they are, or that they're interchangeable as a term. They are not. [click]Sustainable productivity isn't forced; it's a natural outcome of a superior Developer Experience (DevEx). DevEx is the leading indicator of success, focusing on the developer's lived reality, [click]while productivity is the lagging indicator, measuring the ultimate business impact.
+Over the past few years, there's been a lot of talk about Developer Productivity with a lot of companies conflating it with Developer Experience, because they are selling you something and benefit from interchanging the terms. [click]Sustainable productivity isn't forced; it's a natural outcome of a superior Developer Experience (DevEx). DevEx is the leading indicator of success, focusing on the developer's lived reality, [click]while productivity is the lagging indicator, measuring the ultimate business impact.
 -->
 
 ---
@@ -404,7 +410,9 @@ class: text-center
 ![alt text](/images/slides/conversation-shift.png){style="width: 80%; height: auto; margin: auto;"}
 
 <!--
-Over the last few years we have seen the conversation shift from pipeline metrics to holistic, business-aligned frameworks, shifting the audience from engineers to the C-suite. All of this is fine in and of itself, but this shift has put the focus on the business and not the developer, and has created a lot of confusion.
+This conversation shift has been from pipeline metrics to holistic, business-aligned frameworks, shifting the audience from engineers to the C-suite. All of this is fine in and of itself, but this shift has put the focus on the business and not the developer, and has created a lot of confusion.
+
+Here's what we've seen with these measurement frameworks....
 -->
 
 ---
@@ -495,7 +503,7 @@ Let's look at these side by side, and then we'll look at how to create a more ho
 </div>
 
 <!--
-So comparing the different frameworks out there, they each have their own strengths and weaknesses, but largely focused on the business and its bottom line, and not the developer.
+So comparing the different frameworks out there, they each have their own strengths and weaknesses, but largely focused on the business and its bottom line, and not the developer. Anyone using these frameworks, or heard of them?
 -->
 
 ---
@@ -525,30 +533,24 @@ A great Developer Experience is not accidental. It's built with the developer in
 
 ### Fast, High-Quality Feedback Loops
 
-<v-clicks>
-
 1. Automated Visual Regression Testing in CI/CD
 2. "Shifting Left" with Static Code Analysis and Linting in the IDE & Pre-Commit Hooks
 3. Production "Canary" Deployments & Automated Monitoring with Meaningful Metrics
 4. Daily "Mob Programming" or Pair Programming Sessions for Critical/Complex Tasks
 5. Dedicated "Bug Bash" Weeks or Sprints with Stakeholder Involvement
 
-</v-clicks>
-
 <!--
 Okay, here are 5 actionable strategies a software development team can implement to improve fast, high-quality feedback loops, focusing on practical changes across tools, processes, and culture.
-[click]Integrate visual regression testing into your CI/CD pipeline. Instead of relying solely on functional tests, automatically capture screenshots of key UI components/pages after each commit and compare them to baseline images. Fail the build if significant visual differences are detected. Tools like BackstopJS, Percy, or Applitools can be used. This provides immediate feedback on UI changes that might be missed by traditional testing, preventing visual bugs from reaching production. *Specific Action:* Implement a BackstopJS test suite for 5 critical UI components in your React application within the next sprint.
-[click]Integrate static analysis and linting tools (e.g., ESLint, SonarQube, Checkstyle) directly into developers' IDEs and as pre-commit hooks. This provides immediate feedback on code style violations, potential bugs, and security vulnerabilities before code is even committed to the repository. This prevents bad code from polluting the codebase and reduces the workload on code reviewers. *Specific Action:* Configure ESLint with Airbnb's style guide in all developers' IDEs and enable Husky pre-commit hooks to run ESLint checks before each commit to enforce code quality.
-[click]Implement a robust monitoring system and adopt canary deployments (or other progressive delivery methods like feature flags). Deploy new code to a small subset of users and closely monitor key metrics like error rates, latency, and resource utilization. Automate alerts that trigger rollbacks if these metrics deviate significantly from established baselines. This allows for rapid detection and mitigation of production issues with minimal user impact. *Specific Action:* Implement Prometheus and Grafana to monitor the API service's response time and error rate, and configure an automated alert to trigger a rollback if the error rate increases by more than 5% during a canary deployment to 10% of users.
-[click]Dedicate specific time slots (e.g., 1-2 hours daily) for mob programming or pair programming sessions, particularly when tackling complex features, refactoring, or debugging challenging issues. This provides immediate feedback from multiple developers, leading to better code quality, faster problem-solving, and knowledge sharing. *Specific Action:* Implement a daily "Mob Programming" session for 1 hour every afternoon for the team focusing on the highest priority and most challenging current bug.
-[click]Schedule regular "bug bash" events (e.g., once per quarter) where the entire team, including developers, QA, product owners, and even stakeholders like customer support representatives, collaboratively test the software and report bugs. This provides diverse perspectives and uncovers issues that might be missed by automated testing or individual developers. Incentivize finding critical bugs. *Specific Action:* Plan a week-long "Bug Bash" event next quarter, inviting representatives from the product and customer support teams, and offer a reward for the developer who finds the most severe or critical bug.
+- Integrate visual regression testing into your CI/CD pipeline. You can automatically capture screenshots of key UI components/pages after each commit and compare them to baseline images, then fail if significant differences are detected. Tools like BackstopJS, Percy, or Applitools are examples.
+- Integrate static analysis and linting tools (e.g., ESLint, SonarQube, Checkstyle) directly into developers' IDEs and as pre-commit hooks, like Husky and Conventional Commits. Get immediate feedback on code style violations, potential bugs, and security vulnerabilities before code is even committed to the repository.
+- Implement a robust monitoring system and adopt canary deployments (or other progressive delivery methods like feature flags), and measure those deployments over time.
+- Dedicate specific time slots (e.g., 1-2 hours daily) for mob programming or pair programming sessions, particularly when tackling complex features, refactoring, or debugging challenging issues. This provides immediate feedback from multiple developers, leading to better code quality, faster problem-solving, and knowledge sharing.
+- Schedule regular "bug bash" events (e.g., once per quarter) where the entire team, including developers, QA, product owners, and even stakeholders like customer support representatives, collaboratively test the software and report bugs. This provides diverse perspectives and uncovers issues that might be missed by automated testing or individual developers. Incentivize finding critical bugs.
 -->
 
 ---
 
 ### Low Cognitive Load
-
-<v-clicks>
 
 1. Standardize Code Style & Linting Rules
 2. Implement Version Control with Meaningful Commit Messages
@@ -556,22 +558,18 @@ Okay, here are 5 actionable strategies a software development team can implement
 4. Centralize Documentation and Knowledge Sharing
 5. Implement Automated Testing at All Levels
 
-</v-clicks>
-
 <!--
 Here are 5 actionable and specific strategies a software development team can implement to improve 'Low Cognitive Load', focusing on practical changes:
-[click]Implement and enforce consistent code style (e.g., using Prettier, ESLint, or equivalent for the team's languages) across all projects. **Benefit:** Reduces the mental effort required to understand unfamiliar code within the codebase. Developers can immediately focus on logic and functionality rather than deciphering formatting nuances. Define a set of configuration, and use CI/CD to enforce code quality and style.
-[click]Mandate a commit message format (e.g., using Conventional Commits) and encourage developers to write clear, concise descriptions of changes in each commit. Integrate commit message validation into the CI/CD pipeline. **Benefit:** Makes it much easier to understand the history of the codebase. Developers can quickly grasp the purpose and context of past changes, reducing the need to dig into code diffs to understand the "why" behind specific implementations.
-[click]Dedicate a small but consistent portion of each sprint (e.g., 10-20%) to addressing identified technical debt. Choose one or two high-impact areas to focus on during each iteration. **Benefit:** Slowly but surely reduces the complexity and "cognitive burden" imposed by poorly designed or implemented code. Cleaning up technical debt improves the overall clarity and maintainability of the codebase, making it easier for developers to understand and work with.
-[click]Establish a single source of truth for all project documentation (e.g., a well-organized wiki, a documentation platform like Read the Docs, or even well-structured READMEs in the repository). Encourage developers to contribute to documentation as part of their workflow and improve upon outdated sections. **Benefit:** Minimizes the time and effort required to find information about the project. Having a centralized and up-to-date knowledge base reduces the cognitive load associated with "information seeking" and allows developers to quickly find the answers they need.
-[click]Develop a comprehensive suite of automated tests (unit, integration, end-to-end) that provide rapid feedback on code changes. Integrate testing into the CI/CD pipeline to ensure tests are run automatically on every commit. **Benefit:** Frees developers from the mental burden of manually verifying the correctness of their code. Automated tests provide confidence that changes haven't introduced regressions and allow developers to focus on building new features or improving existing ones.
+- Implement and enforce consistent code style (e.g., using Prettier, ESLint, or equivalent for the team's languages) across all projects.
+- Make sure you're using Version Control as well as the commit message hooks I mentioned. With uniform formats for these developers can quickly grasp the purpose and context of past changes, reducing the need to dig into code diffs to understand the "why" behind specific implementations.
+- Dedicate a small but consistent portion of each sprint (e.g., 10-20%) to addressing identified technical debt. Choose one or two high-impact areas to focus on during each iteration.
+- Establish a single source of truth for all project documentation (e.g., a well-organized wiki, a documentation platform like Read the Docs, or even well-structured READMEs in the repository), and encourage documentation as part of the workflow.
+- Develop a comprehensive suite of automated tests (unit, integration, end-to-end) that provide rapid feedback on code changes. Integrate testing into the CI/CD pipeline to ensure tests are run automatically on every commit.
 -->
 
 ---
 
 ### Enabled "Flow State"
-
-<v-clicks>
 
 1. Implement a High-Signal Notification System & Prioritization
 2. Adopt a Streamlined Code Review Process with Contextual Tooling
@@ -579,15 +577,13 @@ Here are 5 actionable and specific strategies a software development team can im
 4. Implement Short, Focused "Pomodoro" or Timeboxing Sessions
 5. Cultivate a Culture of Psychological Safety and Open Communication
 
-</v-clicks>
-
 <!--
 here are 5 actionable and specific strategies a software development team can implement to improve 'Enabled Flow State', focusing on practical changes to tools, processes, and culture.
-[click]**Action:** Replace generic "email everything" approaches with a notification system (e.g., Slackbot integration, dedicated in-IDE notification pane) that intelligently filters and prioritizes alerts based on urgency and context (e.g., only notify for breaking CI builds directly impacting the feature being worked on, defer less critical updates). **Rationale:** Constant bombardment of irrelevant notifications severely disrupts flow. A well-designed system helps maintain focus by only surfacing critical information when needed and deferring non-urgent items. **Measurement:** Track the number of interruptions per developer per day before and after implementation. Aim for a significant reduction. **Example Tool:** PagerDuty can be customized for internal notifications. Your project management software may have granular notification options.
-[click]**Action:** Implement a code review process that prioritizes speed and constructive feedback. Integrate code review tools directly into the IDE or code editor (e.g., GitHub/GitLab extensions). Enforce code review guidelines focusing on clarity, maintainability, and architectural consistency. Encourage reviewers to provide actionable suggestions, not just nitpicks. **Rationale:** Delays and unclear feedback in code review are major flow-killers. A streamlined process minimizes wait times and ensures the feedback is helpful and actionable. **Measurement:** Track the time between code submission and approval. Measure the number of iterations required for code review. **Example Tools:** GitHub Pull Requests, GitLab Merge Requests, Code Climate (for automated code quality checks integrated into the review process).
-[click]**Action:** Dockerize development environments and provide pre-configured, containerized setups for each project. Automate the environment setup process with tools like Docker Compose or Kubernetes (for larger projects). Ensure that these environments closely mirror production. **Rationale:** Wasted time setting up and debugging environments is a significant source of frustration and flow disruption. Standardized, automated setups ensure everyone is working with the same tools and versions, reducing compatibility issues and setup time. **Measurement:** Track the time it takes for a new developer to get a project up and running. Survey developers on the ease of setting up and maintaining their development environment. **Example Tools:** Docker, Docker Compose, Kubernetes, Vagrant.
-[click]**Action:** Encourage the use of timeboxing techniques like the Pomodoro Technique (25 minutes of focused work, followed by a 5-minute break). Implement visual timers or tools that help track and manage these sessions. **Rationale:** Breaking down work into manageable chunks, punctuated by short breaks, can help maintain focus and prevent burnout. The structured approach can also help overcome procrastination. **Measurement:** Track the number of Pomodoros completed per day. Conduct surveys to assess developers' perception of productivity and focus while using the technique. **Example Tools:** Tomato Timer (online), Focus To-Do (app), Forest (app).
-[click]**Action:** Encourage developers to ask questions, admit mistakes, and experiment without fear of blame or punishment. Implement regular retrospectives to identify and address roadblocks to flow. Create a safe space to voice concerns regarding workflow. Actively work to resolve issues that developers bring up. **Rationale:** Fear of failure or negative consequences inhibits risk-taking, experimentation, and problem-solving. A psychologically safe environment fosters a culture of continuous improvement and enables developers to feel comfortable seeking help when needed. **Measurement:** Track the number of ideas and suggestions generated in retrospectives. Monitor the level of engagement in team discussions. Conduct anonymous surveys to assess the overall level of psychological safety. **Example Techniques:** Blameless postmortems, regular team retrospectives (using Agile methodologies), open-door policy for communication with managers.
+- Replace generic "email everything" approaches with a notification system that intelligently filters and prioritizes alerts based on urgency and context (e.g., only notify for breaking CI builds directly impacting the feature being worked on, defer less critical updates).
+- Implement a code review process that prioritizes speed and constructive feedback. Integrate code review tools directly into the IDE or code editor (e.g., GitHub/GitLab extensions). Enforce code review guidelines focusing on clarity, maintainability, and architectural consistency. Encourage reviewers to provide actionable suggestions, not just nitpicks.
+- Standardize development environments and provide pre-configured, containerized setups for each project - ensuring everyone is working with the same baseline and standards, and also helps with new dev onboarding.
+- Break down work into manageable chunks, with timeboxing techniques like the Pomodoro Technique (25 minutes of focused work, followed by a 5-minute break) - which can help maintain focus and prevent burnout. The structured approach can also help overcome procrastination.
+- Encourage developers to ask questions, admit mistakes, and experiment without fear of blame or punishment. Implement regular retrospectives to identify and address roadblocks to flow. Create a safe space to voice concerns regarding workflow. Actively work to resolve issues that developers bring up.
 -->
 
 ---
@@ -623,30 +619,24 @@ Move from abstract to actionable. Use a balanced set of metrics that reflect the
 
 ### Cycle Time ⏱️
 
-<v-clicks>
-
 - Implement and enforce "Small Batch" Size Approach
 - Optimize Code Review Process with Developer-Focused Tooling and Practices
 - Invest in Test Automation and CI/CD Pipelines
 - Improve Development Environment Setup and Standardization
 - Proactively Identify and Remove Blocking Issues and Dependencies
 
-</v-clicks>
-
 <!--
-Cycle time is the time it takes to go from idea to production. It is a key measure of how quickly a team can deliver value. Here are 5 actionable strategies a software development team can implement to improve cycle time, focusing on practical changes across tools, processes, and culture.
-[click]Break down large features and tasks into the smallest possible independent units of work that deliver measurable value. Aim for PRs/MRs that can be reviewed and merged within a day or two. Define clear acceptance criteria for each small batch.
-[click]Adopt a code review tool that integrates seamlessly with your IDE and version control system (e.g., GitHub, GitLab, Bitbucket). Implement automated code style checks and linting to catch common errors before review. Define clear code review guidelines and expectations for both reviewers and authors (e.g., focus on logic, design, and security). Encourage reviewers to provide constructive and actionable feedback. Implement review queue prioritization based on factors like change size and criticality. Track Code Review Time as a separate metric to identify bottlenecks.
-[click]Automate unit, integration, and end-to-end tests to provide rapid feedback on code changes. Implement a CI/CD pipeline that automatically builds, tests, and deploys code changes to staging environments (and, ideally, production) on every commit. Configure the CI/CD pipeline to provide clear and concise feedback on build and test status. Monitor CI/CD pipeline performance (e.g., build times, test execution times) and identify areas for optimization. Shift-Left testing to catch issues earlier in the development lifecycle.
-[click]Provide developers with automated, pre-configured development environments (e.g., using Docker, Vagrant, or cloud-based IDEs). Create standardized project templates and code scaffolding tools to reduce boilerplate code. Centralize and document common development tasks and workflows. Offer training and support on using the development environment and tools. Ensure environments are mirrored closely to production.
-[click]Implement daily stand-up meetings focused on identifying and unblocking impediments - not just status updates. Use project management tools to track dependencies and potential roadblocks. Encourage developers to proactively raise concerns about potential delays or dependencies. Establish clear escalation paths for resolving blocking issues. Investigate long lead times for external dependencies (e.g., third-party APIs, data access) and identify potential solutions. Prioritize breaking down inter-team dependencies.
+Cycle time is the time it takes to go from idea to production. It is a key measure of how quickly a team can deliver value. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Implement and enforce "Small Batch" Size Approach
+- Optimize Code Review Process with Developer-Focused Tooling and Practices
+- Invest in Test Automation and CI/CD Pipelines
+- Improve Development Environment Setup and Standardization
+- Proactively Identify and Remove Blocking Issues and Dependencies
 -->
 
 ---
 
 ### PR Review Time 🔄
-
-<v-clicks>
 
 - Enforce "Small PR" Guidelines and Automation
 - Implement a Reviewer Rotation and/or "Reviewer Roulette" System
@@ -654,22 +644,19 @@ Cycle time is the time it takes to go from idea to production. It is a key measu
 - Establish Service Level Agreements (SLAs) for PR Reviews and Make Them Visible
 - Invest in Automated Code Analysis and CI/CD Integration
 
-</v-clicks>
 
 <!--
-PR review time plays a part in cycle time, and is a key measurement of how quickly a team can deliver value, fixes, etc. Here are 5 actionable strategies a software development team can implement to improve PR review time, focusing on practical changes across tools, processes, and culture.
-[click]Smaller PRs are *significantly* easier and faster to review. They reduce cognitive load for the reviewer, making it easier to understand the changes, identify potential issues, and provide meaningful feedback. Larger PRs can be overwhelming, leading to procrastination, missed errors, and ultimately, longer review times. Feature toggles and splitting features into smaller, incremental changes is a great way to keep PR sizes reasonable.
-[click]This prevents a few individuals from being constantly overloaded with reviews, leading to burnout and delays. It also broadens the team's knowledge and understanding of different parts of the codebase, reducing "bus factor." Automating the assignment process based on ownership (e.g., by using CODEOWNERS files in GitHub or similar functionality) ensures that the right people are involved without manual intervention. It also encourages cross-training within the team.
-[click]A well-written PR description provides reviewers with the necessary context to quickly understand the changes and their purpose. It minimizes the need for back-and-forth communication to clarify ambiguities. It can also point to edge-cases considered, or areas where there *are* known limitations. Without proper context, reviewers spend extra time deciphering the code and its intent, significantly increasing review time.
-[click]Setting clear expectations for review turnaround time creates a sense of urgency and accountability. When reviewers know they are expected to prioritize reviews, they are more likely to allocate time for them. Publicly tracking and reporting on SLA compliance encourages reviewers to meet expectations and identifies areas where the review process needs improvement. It also shows the team that management takes PR review time seriously.
-[click]Automated code analysis can catch many common coding errors, style violations, and potential security vulnerabilities *before* a human reviewer even looks at the code. This frees up reviewers to focus on more complex issues and the overall design of the solution. Faster feedback loops provided by automated testing also help developers iterate more quickly and reduce the likelihood of regressions. By shifting the focus to reviewing more complex issues, instead of the basics that should be covered by tools, review time is greatly reduced.
+PR review time plays a part in cycle time, and is a key measurement of how quickly a team can deliver value, fixes, etc. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Enforce "Small PR" Guidelines and Automation
+- Implement a Reviewer Rotation and/or "Reviewer Roulette" System
+- Mandate Clear and Concise PR Descriptions and Context
+- Establish Service Level Agreements (SLAs) for PR Reviews and Make Them Visible
+- Invest in Automated Code Analysis and CI/CD Integration
 -->
 
 ---
 
 ### Rework Rate ✍️
-
-<v-clicks>
 
 - Implement Comprehensive Code Reviews with a Focused Checklist
 - Refine User Stories with Clearer Acceptance Criteria and Examples
@@ -677,22 +664,19 @@ PR review time plays a part in cycle time, and is a key measurement of how quick
 - Implement a Robust Definition of Done (DoD) and Enforce It
 - Improve Feedback Loops and Communication
 
-</v-clicks>
-
 <!--
-Rework rate is the percentage of work that needs to be redone due to errors, misunderstandings, or changes in requirements - after things have been committed. It builds on PR review time and again how efficiently a team can deliver value without unnecessary rework. Here are 5 actionable strategies a software development team can implement to improve rework rate, focusing on practical changes across tools, processes, and culture.
-[click]Code reviews are a primary defense against introducing bugs and architectural flaws that lead to rework. A focused checklist ensures reviewers are consistently looking for the most common and impactful issues. By catching errors early, you prevent them from progressing further down the development pipeline, where fixing them becomes exponentially more expensive and time-consuming. Consistent code reviews also promote knowledge sharing and enforce coding standards across the team.
-[click]Ambiguous or incomplete requirements are a leading cause of rework. Developers may misinterpret the intended functionality, leading to implementations that don't meet stakeholder expectations. Clear acceptance criteria act as a contract, ensuring everyone is on the same page about what "done" actually means. Examples help to solidify understanding and prevent misinterpretations. Early collaboration and refinement allows for questions and concerns to be raised before development time is spent going in the wrong direction.
-[click]Automated testing catches issues much earlier in the development lifecycle than manual testing. Well-designed unit tests verify that individual components work as expected. Integration tests ensure that different modules play well together. Static analysis tools identify potential bugs and security vulnerabilities before they are even committed to the repository. This reduces the likelihood of bugs making their way into production and needing to be fixed later, leading to rework. Good tooling reduces manual effort and creates confidence.
-[click]A clear and enforced Definition of Done ensures that code is not considered complete until it meets a certain quality standard. This prevents developers from prematurely merging code with unresolved issues, which can lead to rework later on. It enforces discipline and encourages a culture of quality.
-[click]Rework often arises from misunderstandings or a lack of awareness of problems. By fostering open communication and providing regular opportunities for feedback, you can identify and address issues early on before they escalate. Monitoring systems provide real-time feedback on the performance and stability of your application, allowing you to quickly respond to and fix problems before they cause significant disruptions. Empowering developers to seek feedback reduces the chances of making assumptions that will need to be changed later.
+Rework rate is the percentage of work that needs to be redone due to errors, misunderstandings, or changes in requirements - after things have been committed. It builds on PR review time and again how efficiently a team can deliver value without unnecessary rework. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Implement Comprehensive Code Reviews with a Focused Checklist
+- Refine User Stories with Clearer Acceptance Criteria and Examples
+- Invest in Better Tooling and Automation for Testing
+- Implement a Robust Definition of Done (DoD) and Enforce It
+- Improve Feedback Loops and Communication
 -->
 
 ---
 
 ### Meeting Load 🧠
 
-<v-clicks>
 
 - Implement a "Meeting-Free Day" (or Half-Day) Policy
 - Audit Meeting Invitations and Participation
@@ -700,22 +684,19 @@ Rework rate is the percentage of work that needs to be redone due to errors, mis
 - Promote Asynchronous Communication Tools & Practices
 - Implement a "Meeting Budget" or "Meeting Credit" System
 
-</v-clicks>
 
 <!--
-Who spends more time on meetings than actually developing? Meeting load is the amount of time developers spend in meetings, which can significantly impact their productivity and focus. Here are 5 actionable strategies a software development team can implement to improve meeting load, focusing on practical changes across tools, processes, and culture.
-[click]This provides developers with uninterrupted blocks of time for focused work, crucial for deep thinking, complex problem-solving, and code implementation. It directly addresses the problem of fragmented workdays caused by constant meetings, allowing developers to enter a flow state and make significant progress. It also signals a cultural shift demonstrating a value for uninterrupted work time.
-[click]Many developers are invited to meetings out of habit or perceived politeness. Auditing helps identify and eliminate unnecessary meeting attendance, freeing up their time for productive work. It also promotes a culture of mindful meeting participation, encouraging organizers to carefully consider who *needs* to be present.
-[click]A clear agenda ensures that meetings are focused and efficient. Timeboxing prevents meetings from dragging on unnecessarily, maximizing the use of attendees' time. Advance notice allows attendees to prepare and contribute more effectively.
-[click]Asynchronous communication allows developers to engage with information and contribute at their own pace, without the need for real-time coordination. This reduces the need for meetings, increases flexibility, and allows developers to focus on their work when they are most productive. It also creates a searchable record of discussions for future reference.
-[click]This creates a direct financial incentive for teams and developers to reduce meeting load. It forces teams to carefully consider the value of each meeting and to find alternatives whenever possible. The ability to "cash out" unused time provides a further reward for efficiency and focus on getting work done.
+Who spends more time on meetings than actually developing? Meeting load is the amount of time developers spend in meetings, which can significantly impact their productivity and focus. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Implement a "Meeting-Free Day" (or Half-Day) Policy
+- Audit Meeting Invitations and Participation
+- Standardize Meeting Agendas and Timeboxing
+- Promote Asynchronous Communication Tools & Practices
+- Implement a "Meeting Budget" or "Meeting Credit" System
 -->
 
 ---
 
 ### Time to First Commit 🚀
-
-<v-clicks>
 
 - Provide Ready-to-Run Starter Projects/Templates
 - Automate Environment Setup and Onboarding
@@ -723,22 +704,19 @@ Who spends more time on meetings than actually developing? Meeting load is the a
 - Offer Short, Focused "First Contribution" Tasks (aka "Good First Issues")
 - Provide Active Mentorship and Support (paired with tooling)
 
-</v-clicks>
 
 <!--
-New Hire Onboarding is probably the most impactful of these, especially in smaller teams, becaause it sets the tone for the new developer's experience. Time to first commit is the time it takes for a new developer to make their first meaningful contribution to the codebase. Here are 5 actionable strategies a software development team can implement to improve time to first commit, focusing on practical changes across tools, processes, and culture.
-[click]New developers often spend significant time setting up their development environment, resolving dependency conflicts, and configuring initial project structure. Starter projects drastically reduce this overhead by providing a functional base to build upon, eliminating the need to start from scratch. This bypasses common "boilerplate" hurdles, allowing them to focus on actual coding and functionality much sooner.
-[click]Inconsistencies in development environments are a major source of delay and frustration. A fully automated environment setup ensures every developer has an identical and working environment, eliminating the "it works on my machine" problem. Automating onboarding streamlines the process of getting access to necessary tools and repositories, further reducing setup time and removing manual dependencies.
-[click]Confusion about how to contribute code, including branching, committing, and reviewing, can add significant delays. Clear, documented guidelines and automated tooling eliminate ambiguity, reduce the chance of errors leading to rework, and allow developers to focus on the code itself. Pre-commit hooks prevent common mistakes from even reaching the repository, speeding up the review process.
-[click]A large, complex codebase can be intimidating. Providing bite-sized tasks gives new developers a low-pressure entry point. Successfully completing a small task provides a sense of accomplishment, familiarity with the workflow, and confidence to tackle larger projects. It's like a "learning curve" bypass, allowing them to contribute value immediately.
-[click]Even with the best tooling and documentation, new developers will inevitably encounter roadblocks. Having a designated mentor and readily available support ensures they don't get stuck and can quickly resolve issues. This personalized assistance builds confidence, accelerates learning, and fosters a welcoming environment, encouraging faster and more effective contributions. The combination of support *and* proper tooling (like good IDE intellisense) means they aren't spending all their time simply debugging configuration issues and can actually start learning the codebase.
+New Hire Onboarding is probably the most impactful of these, especially in smaller teams, becaause it sets the tone for the new developer's experience. Time to first commit is the time it takes for a new developer to make their first meaningful contribution to the codebase. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Provide Ready-to-Run Starter Projects/Templates
+- Automate Environment Setup and Onboarding
+- Simplify Code Contribution Process with Clear Guidelines and Tooling
+- Offer Short, Focused "First Contribution" Tasks (aka "Good First Issues")
+- Provide Active Mentorship and Support (paired with tooling)
 -->
 
 ---
 
 ### Perceived Focus Time 💡
-
-<v-clicks>
 
 - Optimize Build Times with Incremental Builds and Caching
 - Implement a "Quiet Period" During Deployments/Integrations
@@ -746,15 +724,15 @@ New Hire Onboarding is probably the most impactful of these, especially in small
 - Automate Repetitive Tasks with Scripting or Tools
 - Improve Error Messaging and Debugging Tools
 
-</v-clicks>
 
 <!--
-Perceived Focus Time is the amount of uninterrupted time developers feel they have to work on their tasks without distractions. It is very subjective, but it is critical for productivity and job satisfaction. Here are 5 actionable strategies a software development team can implement to improve perceived focus time, focusing on practical changes across tools, processes, and culture.
-[click]Long build times are a major focus killer. Developers must switch context, potentially losing their train of thought, while waiting. Reducing build times, especially for small changes, allows for rapid iteration and keeps developers "in the zone" without constant interruptions from build processes. Incremental builds and caching reduce the overall time and resources needed for compilation, leading to a significantly better Perceived Focus Time.
-[click]Disruptions during these crucial times can be exceptionally frustrating. Imagine a developer deeply immersed in debugging an integration issue and then being pulled into an unrelated meeting. By intentionally minimizing distractions during complex operations, we provide a more dedicated block of time for developers to focus on the critical task at hand. A predictable, quiet environment directly enhances Perceived Focus Time.
-[click]Constant notifications lead to frequent context switching, even if each switch is brief. A stream of interruptions breaks the flow and requires developers to refocus each time, which is mentally taxing and reduces the perception of having enough uninterrupted time. By reducing the volume and relevance of notifications, we allow developers to maintain focus for longer periods.
-[click]Repetitive tasks are not only tedious but also require mental energy without contributing significantly to the core development goals. Automating these tasks frees up developers' time and cognitive resources, allowing them to concentrate on more challenging and engaging work. The elimination of repetitive steps leads to the feeling of more control over time, leading to better perceived focus.
-[click]Debugging can be a major time sink and source of frustration. When error messages are cryptic or debugging tools are inadequate, developers spend a disproportionate amount of time deciphering issues instead of writing code. Clear error messages and effective debugging tools reduce the time spent troubleshooting, leading to fewer context switches and greater perceived focus. Also, a sense of competence when solving problems also adds to the general feeling of focus and productivity. Remember to measure the impact of these strategies after implementation. Use surveys, feedback sessions, and telemetry data to track changes in Perceived Focus Time and make further adjustments as needed.
+Perceived Focus Time is the amount of uninterrupted time developers feel they have to work on their tasks without distractions. It is very subjective, but it is critical for productivity and job satisfaction. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+- Optimize Build Times with Incremental Builds and Caching
+- Implement a "Quiet Period" During Deployments/Integrations
+- Prioritize and Reduce Notification Overload
+- Automate Repetitive Tasks with Scripting or Tools
+- Improve Error Messaging and Debugging Tools
+
 -->
 
 ---
