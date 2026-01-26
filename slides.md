@@ -3,14 +3,14 @@
 theme: the-unnamed
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+#background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Developer Experience is more than just Productivity metrics
 info: |
   ## Developer Experience is more than just Productivity metrics
   With everything changing in tech at a frenetic pace, the emphasis on developer productivity has overshadowed the true essence of developer experience (DevEx). While frameworks like SPACE, getDX, and DORA metrics provide valuable insights, they often miss the mark on capturing developers' real, day-to-day experiences using tools and services, instead focusing strictly on the bottom line for the company. Meanwhile, developers and practitioners are job-hopping more than ever.
   This talk will explore the origins and evolution of "developer experience," dissect popular frameworks, and advocate for a more balanced approach that values the practitioner's perspective. At the end we will set a path towards integrating top-down metrics with bottom-up feedback, ensuring an approach to developer experience that fosters innovation and satisfaction.
-conference: "DevFest KC 2025"
+conference: "FOSDEM 2026 - Testing & CD DevRoom"
 socialimg: /images/bluesky-jerdog-white.png
 # https://sli.dev/features/drawing
 drawings:
@@ -56,137 +56,7 @@ transition: fade
 <!--
 We've all had that experience using a tool or service that was a disaster. It could be the worst deployment process you've ever seen, or the most painful codebase you've ever had to work with, or documentation that's so confusing it makes your head spin. Or maybe a combination of them… Who here knows what I’m talking about?
 
-Back in 2023, NordicAPIs put together a list of top DevEx fails companies make.
--->
-
----
-layout: image-right
-image: /images/slides/new-feature-fail.gif
-backgroundSize: contain
-class: my-cool-content-on-the-left
-transition: fade
----
-
-# Bad DevEx
-## Common examples
-
-- Poorly documented features (or bugs){style="font-size: 1.2em;"}
-
-<!--
-- Poorly documented features (or bugs)
-
-We’ve all had those moments where we encounter changes to an application that either introduce new features, or in some cases, new bugs, that aren’t adequately documented or even mentioned as existing - even if the bug won’t be fixed for awhile and there are workarounds.
-
--->
-
----
-layout: image-right
-image: /images/slides/api-fail.png
-backgroundSize: contain
-class: my-cool-content-on-the-left
-transition: fade
----
-
-# Bad DevEx
-## Common examples
-
-- Poorly documented features (or bugs){style="font-size: 1.2em;"}
-- Missing OpenAPI spec (or even APIs)]{style="font-size: 1.2em;"}
-
-<!--
-- Missing OpenAPI spec (or even APIs)
-
-We’ve all worked with those companies that say they have a developer platform, but are missing documentation for their APIs, or even worse, no APIs at all.
--->
-
----
-layout: image-right
-image: /images/slides/missing-docs-fail.png
-backgroundSize: contain
-class: my-cool-content-on-the-left
-transition: fade
----
-
-# Bad DevEx
-## Common examples
-
-- Poorly documented features (or bugs){style="font-size: 1.2em;"}
-- Missing OpenAPI spec (or even APIs){style="font-size: 1.2em;"}
-- PDF documentation... or access-gated{style="font-size: 1.2em;"}
-
-<!--
-- Downloading documentation… as a PDF, or access-gated
-
-Having to hunt all over for documentation, and it’s not been written, OR, to find it, and realize you have to download it as a PDF, or that it’s gated by a password. For a public tool.
--->
-
----
-layout: image-right
-image: /images/slides/missing-examples-fail.png
-backgroundSize: contain
-class: my-cool-content-on-the-left
-transition: fade
----
-
-# Bad DevEx
-## Common examples
-
-- Poorly documented features (or bugs){style="font-size: 1.2em;"}
-- Missing OpenAPI spec (or even APIs){style="font-size: 1.2em;"}
-- PDF documentation... or access-gated{style="font-size: 1.2em;"}
-- Missing examples… of _anything_{style="font-size: 1.2em;"}
-
-<!--
-- Missing examples… of _anything_
-
-There’s the examples of different departments having different ideas of what has been built, without any examples of how to actually use it or put it together. Accessing a development tool shouldn’t be like putting together an IKEA piece of furniture.
--->
-
----
-layout: image-right
-image: /images/slides/ramiro-tweet.png
-backgroundSize: contain
-class: my-cool-content-on-the-left
----
-
-# Bad DevEx
-## Common examples
-
-- Poorly documented features (or bugs){style="font-size: 1.2em;"}
-- Missing OpenAPI spec (or even APIs){style="font-size: 1.2em;"}
-- PDF documentation... or access-gated{style="font-size: 1.2em;"}
-- Missing examples… of _anything_{style="font-size: 1.2em;"}
-- “CI as Magic 8-Ball”{style="font-size: 1.2em;"}
-
-<!--
-- “CI as Magic 8-Ball”
-
-And then there is Ramiro's story that I call "CI as Magic 8-Ball" where you're really just throwing code against the wall like pasta to see if it's done or not.
-
-***Since I'm on the Frontend Stage, what about epicly bad websites that would put ebaumsworld to shame?***
--->
-
----
-layout: image
-image: /images/slides/yale-art-school.jpg
-backgroundSize: contain
-title: '--Yale bad website'
----
-
-<!--
-
-what about epicly bad websites that would put ebaumsworld to shame?
-Here’s an epicly bad website (as of Oct-2024) from none other than the Yale School of Art. So much wrong on one page.
-
--->
-
----
-layout: image
-image: /images/slides/yale-art-school-spring2025.jpg
-backgroundSize: contain
----
-
-<!--
+There are also plenty of examples that we can point to that illustrate good developer experiences.
 -->
 
 ---
@@ -201,7 +71,7 @@ git push heroku main
 ![Heroku deploy button](/images/slides/heroku-deploy-button.png)
 
 <!--
-Heroku was long considered the gold standard for developer experience with a simple set of tools and a command-line interface that allowed developers to focus on building applications and delivering them to users. And that was it. Now of course, Heroku is still around (albeit not nearly as developer-centric as they formerly were, but that is changing), but it's not the only game in town. Anyone used Netlify, Vercel, etc.?
+One that always comes to mind is Heroku. Heroku was long considered the gold standard for developer experience with a simple set of tools and a command-line interface that allowed developers to focus on building applications and delivering them to users. And that was it. Now of course, Heroku is still around (albeit not nearly as developer-centric as they formerly were, but that is changing), but it's not the only game in town. Anyone used Netlify, Vercel, etc.?
 -->
 
 ---
@@ -269,18 +139,6 @@ Developer Experience is the journey of developers as they learn and deploy techn
 -->
 
 ---
-
-# Developer Experience != Developer Productivity
-
-<span style="background-color: #ffffff; color: #000000; font-size: 1.5em; padding: 10px; border-radius: 5px;">
-🎵 More than a metric.... 🎵
-</span>
-
-<!--
-There is a subtle difference between Developer Experience and Developer Productivity, with the focus of DevProd being how effective and efficient developers are, while DevEx is about the experience developers have using tools and services - at its core it is about the practitioner. They aren't the same, but both do have some relation to each other - with Productivity being driven by the experience instead of the other way around. Dev Productivity is a metric, while DevEx is a feeling.
--->
-
----
 layout: two-cols-header
 class: text-center
 layoutClass: gap-8
@@ -288,9 +146,12 @@ layoutClass: gap-8
 
 # Developer Experience != Developer Productivity
 
-::left::
+<br />
+<span style="background-color: #ffffff; color: #000000; font-size: 1.5em; padding: 10px; border-radius: 5px;">
+🎵 More than a metric.... 🎵
+</span>
 
-<v-click>
+::left::
 
 ## Experience is the <span class="text-[#FF6E54] font-bold">Cause</span>
 
@@ -302,11 +163,8 @@ layoutClass: gap-8
   </div>
 </div>
 
-</v-click>
 
 ::right::
-
-<v-click>
 
 ## Productivity is the <span class="text-[#955196] font-bold">Effect</span>
 
@@ -318,10 +176,11 @@ layoutClass: gap-8
   </div>
 </div>
 
-</v-click>
 
 <!--
-Over the past few years, there's been a lot of talk about Developer Productivity with a lot of companies conflating it with Developer Experience, because they are selling you something and benefit from interchanging the terms. [click]Sustainable productivity isn't forced; it's a natural outcome of a superior Developer Experience (DevEx). DevEx is the leading indicator of success, focusing on the developer's lived reality, [click]while productivity is the lagging indicator, measuring the ultimate business impact.
+There is a subtle difference between Developer Experience and Developer Productivity, with the focus of DevProd being how effective and efficient developers are, while DevEx is about the experience developers have using tools and services - at its core it is about the practitioner. They aren't the same, but both do have some relation to each other - with Productivity being driven by the experience instead of the other way around. Dev Productivity is a metric, while DevEx is a feeling.
+
+Sustainable productivity isn't forced; it's a natural outcome of a superior Developer Experience (DevEx). DevEx is the leading indicator of success, focusing on the developer's lived reality, while productivity is the lagging indicator, measuring the ultimate business impact.
 -->
 
 ---
@@ -398,7 +257,7 @@ So all of this interest in DevEx isn't a new concept - but is largely driven by 
 </div>
 
 <!--
-For decades, engineering leaders grappled with measuring productivity, often relying on flawed metrics like lines of code. This created easily gamed incentives and missed the bigger picture. Today, the focus has shifted to understanding the entire value stream, leading to sophisticated, research-backed frameworks that provide a holistic view of performance.
+For decades, engineering leaders grappled with measuring productivity, often relying on flawed metrics like lines of code - an easily gamed incentive that missed the bigger picture. Today, the focus has shifted to understanding the entire value stream, leading to sophisticated, research-backed frameworks that provide a holistic view of performance. A few of the more popular frameworks are DORA, SPACE, and GetDX Core 4.
 -->
 
 ---
@@ -410,50 +269,9 @@ class: text-center
 ![alt text](/images/slides/conversation-shift.png){style="width: 80%; height: auto; margin: auto;"}
 
 <!--
-This conversation shift has been from pipeline metrics to holistic, business-aligned frameworks, shifting the audience from engineers to the C-suite. All of this is fine in and of itself, but this shift has put the focus on the business and not the developer, and has created a lot of confusion.
+These frameworks have shifted the conversation from pipeline metrics to holistic, business-aligned frameworks, shifting the audience from engineers to the C-suite. All of this is fine in and of itself, but this shift has put the focus on the business and not the developer, and has created a lot of confusion.
 
 Here's what we've seen with these measurement frameworks....
--->
-
----
-
-<h2 class="text-3xl font-bold text-center gradient-text mb-4">The Evolutionary Path of Measurement</h2>
-
-<div class="relative pl-8">
-
-<v-clicks>
-
-  <div class="timeline-item relative">
-    <div class="timeline-dot"></div>
-    <h4 class="text-xl font-bold text-white-800">2014-2018: DORA Metrics Emerge</h4>
-    <p style="font-size: 0.8em;">DORA established the gold standard for measuring DevOps pipeline health through rigorous research, priving speed & reliability are not trade-offs...</p>
-  </div>
-  <div class="timeline-item relative">
-    <div class="timeline-dot"></div>
-    <h4 class="text-xl font-bold text-white-800">2021: The SPACE Framework Broadens the Scope</h4>
-    <p style="font-size: 0.8em;">SPACE framework introduced a holistic, human-centric model, arguing that productivity is multi-dimensional, emphasized the importance of developer satisfaction, well-being, and collaboration as critical components of performance...</p>
-  </div>
-  <div class="timeline-item relative">
-    <div class="timeline-dot"></div>
-    <h4 class="text-xl font-bold text-white-800">2024: GetDX Core 4 Unifies for Business Impact</h4>
-    <p style="font-size: 0.8em;">GetDX Core 4 was created to be a practical, prescriptive framework attempting to unify DORA and SPACE, creating a link between engineering efforts and tangible business outcomes like ROI and revenue.</p>
-  </div>
-
-</v-clicks>
-
-</div>
-
-<!--
-[click]2014-2018: DORA Metrics Emerge
-DORA established the gold standard for measuring DevOps pipeline health. It proved that speed and stability are not trade-offs, providing engineering teams with a quantitative, evidence-backed language for software delivery performance.
-
-[click]2021: The SPACE Framework Broadens the Scope
-Recognizing DORA's limitations, the SPACE framework introduced a holistic, human-centric model. It argued that productivity is multi-dimensional, codifying the importance of developer satisfaction, well-being, and collaboration as critical components of performance.
-
-[click]2024: GetDX Core 4 Unifies for Business Impact
-To resolve market confusion, GetDX Core 4 was created to be a practical, prescriptive framework. It unifies concepts from DORA and SPACE and, most importantly, creates a direct link between engineering efforts and tangible business outcomes like ROI and revenue.
-
-Let's look at these side by side, and then we'll look at how to create a more holistic view of developer experience that works with these frameworks.
 -->
 
 ---
@@ -503,6 +321,13 @@ Let's look at these side by side, and then we'll look at how to create a more ho
 </div>
 
 <!--
+In 2014 **DORA** established the gold standard for measuring DevOps pipeline health, priving that speed and stability are not trade-offs, providing engineering teams with a quantitative, evidence-backed language for **software delivery performance**.
+
+Building on DORA, the **SPACE framework** introduced in 2021 a holistic, human-centric model, arguing that productivity is multi-dimensional, codifying the importance of satisfaction, well-being, and collaboration as critical components of **performance**.
+
+[click]2024: GetDX Core 4 Unifies for Business Impact
+To resolve market confusion (or create more?), in 2024 **GetDX Core 4** was created to be a practical, prescriptive framework seeking to unify concepts from DORA and SPACE and, most importantly, create a direct link between engineering efforts and tangible business outcomes like **ROI and revenue**.
+
 So comparing the different frameworks out there, they each have their own strengths and weaknesses, but largely focused on the business and its bottom line, and not the developer. Anyone using these frameworks, or heard of them?
 -->
 
@@ -526,7 +351,7 @@ So comparing the different frameworks out there, they each have their own streng
 </div>
 
 <!--
-A great Developer Experience is not accidental. It's built with the developer in mind, and designed to minimize friction, reduce mental overhead, and enable deep, focused work. We'll dive into each of these a bit more with some actionable steps to implement them.
+Building a great Developer Experience is not accidental. It's built with the **developer in mind**, and designed to minimize friction, reduce mental overhead, and enable deep, focused work. We'll dive into each of these a bit more with some actionable steps to implement them.
 -->
 
 ---
@@ -540,8 +365,9 @@ A great Developer Experience is not accidental. It's built with the developer in
 5. Dedicated "Bug Bash" Weeks or Sprints with Stakeholder Involvement
 
 <!--
-Okay, here are 5 actionable strategies a software development team can implement to improve fast, high-quality feedback loops, focusing on practical changes across tools, processes, and culture.
-- Integrate visual regression testing into your CI/CD pipeline. You can automatically capture screenshots of key UI components/pages after each commit and compare them to baseline images, then fail if significant differences are detected. Tools like BackstopJS, Percy, or Applitools are examples.
+A core of DevEx (and DevOps, really) are fast, high-quality feedback loops:
+
+- Integrate visual regression testing into your CI/CD pipeline. Capture screenshots of key UI components/pages after each commit and compare them to baseline images, then fail if significant differences are detected with tools like BackstopJS, Percy, and Applitools to name a few.
 - Integrate static analysis and linting tools (e.g., ESLint, SonarQube, Checkstyle) directly into developers' IDEs and as pre-commit hooks, like Husky and Conventional Commits. Get immediate feedback on code style violations, potential bugs, and security vulnerabilities before code is even committed to the repository.
 - Implement a robust monitoring system and adopt canary deployments (or other progressive delivery methods like feature flags), and measure those deployments over time.
 - Dedicate specific time slots (e.g., 1-2 hours daily) for mob programming or pair programming sessions, particularly when tackling complex features, refactoring, or debugging challenging issues. This provides immediate feedback from multiple developers, leading to better code quality, faster problem-solving, and knowledge sharing.
@@ -559,7 +385,8 @@ Okay, here are 5 actionable strategies a software development team can implement
 5. Implement Automated Testing at All Levels
 
 <!--
-Here are 5 actionable and specific strategies a software development team can implement to improve 'Low Cognitive Load', focusing on practical changes:
+A few ways to implement "Low Cognitive Load" for your teams:
+
 - Implement and enforce consistent code style (e.g., using Prettier, ESLint, or equivalent for the team's languages) across all projects.
 - Make sure you're using Version Control as well as the commit message hooks I mentioned. With uniform formats for these developers can quickly grasp the purpose and context of past changes, reducing the need to dig into code diffs to understand the "why" behind specific implementations.
 - Dedicate a small but consistent portion of each sprint (e.g., 10-20%) to addressing identified technical debt. Choose one or two high-impact areas to focus on during each iteration.
@@ -578,9 +405,10 @@ Here are 5 actionable and specific strategies a software development team can im
 5. Cultivate a Culture of Psychological Safety and Open Communication
 
 <!--
-here are 5 actionable and specific strategies a software development team can implement to improve 'Enabled Flow State', focusing on practical changes to tools, processes, and culture.
-- Replace generic "email everything" approaches with a notification system that intelligently filters and prioritizes alerts based on urgency and context (e.g., only notify for breaking CI builds directly impacting the feature being worked on, defer less critical updates).
-- Implement a code review process that prioritizes speed and constructive feedback. Integrate code review tools directly into the IDE or code editor (e.g., GitHub/GitLab extensions). Enforce code review guidelines focusing on clarity, maintainability, and architectural consistency. Encourage reviewers to provide actionable suggestions, not just nitpicks.
+Improving 'Flow State' involves:
+
+- Replace generic "email everything" approaches and only notify for breaking CI builds directly impacting the feature being worked on, defer less critical updates.
+- Implement a code review process that prioritizes speed and constructive feedback, and integrate code review tools directly into the IDE or code editor (e.g., GitHub/GitLab have some extensions). Enforce guidelines focusing on clarity, maintainability, and architectural consistency, and encourage reviewers to provide actionable suggestions, not just nitpicks.
 - Standardize development environments and provide pre-configured, containerized setups for each project - ensuring everyone is working with the same baseline and standards, and also helps with new dev onboarding.
 - Break down work into manageable chunks, with timeboxing techniques like the Pomodoro Technique (25 minutes of focused work, followed by a 5-minute break) - which can help maintain focus and prevent burnout. The structured approach can also help overcome procrastination.
 - Encourage developers to ask questions, admit mistakes, and experiment without fear of blame or punishment. Implement regular retrospectives to identify and address roadblocks to flow. Create a safe space to voice concerns regarding workflow. Actively work to resolve issues that developers bring up.
@@ -594,10 +422,12 @@ here are 5 actionable and specific strategies a software development team can im
 
 > "when a measure becomes a target, it ceases to be a good measure."
 
-- Goodhart's Law
+-Goodhart's Law
 
 <!--
-The introduction of any measurement system carries the inherent risk of misuse. It is imperative that DevEx and productivity metrics are used as tools for systemic improvement, not as instruments for judging or ranking individual developers. When a metric becomes a target for performance evaluation, it ceases to be a good measure—a phenomenon known as Goodhart's Law. If "number of commits" is incentivized, developers will simply make many small, meaningless commits to inflate their score, degrading code history without adding value.
+The introduction of any measurement system carries the inherent risk of misuse. It is imperative that DevEx and productivity metrics are used as **tools** for systemic improvement, **not as instruments** for judging or ranking individual developers. When a metric becomes a target for performance evaluation, it ceases to be a good measure—a phenomenon known as Goodhart's Law.
+
+If "number of commits" is incentivized, developers will simply make many small, meaningless commits to inflate their score, degrading code history without adding value.
 -->
 
 ---
@@ -611,8 +441,12 @@ The introduction of any measurement system carries the inherent risk of misuse. 
 - Time to First Commit
 - Perceived Focus Time
 
+***These are not one-size-fits-all metrics, but a starting point.***
+
 <!--
-Move from abstract to actionable. Use a balanced set of metrics that reflect the developer's daily reality and provide clear signals for improvement. Use them as conversation starters, not for judgment. These 6 metrics are probably a great starting point for a team to measure their developer experience, and can be used in conjunction with the frameworks we've discussed. But I want to stress that these are not a one-size-fits-all set of metrics, and should be tailored to the specific needs and context of your team. They are a starting point, not an end point.
+Move from abstract to actionable. Use a balanced set of metrics that reflect the developer's daily reality and provide clear signals for improvement. Use them as **conversation starters**, not for judgment. These 6 metrics are probably a great starting point for a team to measure their developer experience, and can be used in conjunction with the frameworks we've discussed.
+
+But I want to stress that these are not a one-size-fits-all set of metrics, and should be tailored to the specific needs and context of your team. They are a starting point, not an end point.
 -->
 
 ---
@@ -620,15 +454,14 @@ Move from abstract to actionable. Use a balanced set of metrics that reflect the
 ### Cycle Time ⏱️
 
 - Implement and enforce "Small Batch" Size Approach
-- Optimize Code Review Process with Developer-Focused Tooling and Practices
 - Invest in Test Automation and CI/CD Pipelines
-- Improve Development Environment Setup and Standardization
-- Proactively Identify and Remove Blocking Issues and Dependencies
+- Improve Dev Environment Setup and Standardization
+- Proactively Identify and Remove Blocking Issues
 
 <!--
-Cycle time is the time it takes to go from idea to production. It is a key measure of how quickly a team can deliver value. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+Cycle time is the time it takes to go from idea to production. It is a key measure of how quickly a team can deliver value.
+
 - Implement and enforce "Small Batch" Size Approach
-- Optimize Code Review Process with Developer-Focused Tooling and Practices
 - Invest in Test Automation and CI/CD Pipelines
 - Improve Development Environment Setup and Standardization
 - Proactively Identify and Remove Blocking Issues and Dependencies
@@ -641,32 +474,29 @@ Cycle time is the time it takes to go from idea to production. It is a key measu
 - Enforce "Small PR" Guidelines and Automation
 - Implement a Reviewer Rotation and/or "Reviewer Roulette" System
 - Mandate Clear and Concise PR Descriptions and Context
-- Establish Service Level Agreements (SLAs) for PR Reviews and Make Them Visible
-- Invest in Automated Code Analysis and CI/CD Integration
-
+- Establish and Make Visible SLAs for PR Reviews
 
 <!--
-PR review time plays a part in cycle time, and is a key measurement of how quickly a team can deliver value, fixes, etc. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+PR review time plays a part in cycle time, and is a key measurement of how quickly a team can deliver value, fixes, etc.
+
 - Enforce "Small PR" Guidelines and Automation
 - Implement a Reviewer Rotation and/or "Reviewer Roulette" System
 - Mandate Clear and Concise PR Descriptions and Context
 - Establish Service Level Agreements (SLAs) for PR Reviews and Make Them Visible
-- Invest in Automated Code Analysis and CI/CD Integration
 -->
 
 ---
 
 ### Rework Rate ✍️
 
-- Implement Comprehensive Code Reviews with a Focused Checklist
 - Refine User Stories with Clearer Acceptance Criteria and Examples
 - Invest in Better Tooling and Automation for Testing
-- Implement a Robust Definition of Done (DoD) and Enforce It
+- Implement a Robust Definition of Done (DoD) and **Enforce** It
 - Improve Feedback Loops and Communication
 
 <!--
-Rework rate is the percentage of work that needs to be redone due to errors, misunderstandings, or changes in requirements - after things have been committed. It builds on PR review time and again how efficiently a team can deliver value without unnecessary rework. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
-- Implement Comprehensive Code Reviews with a Focused Checklist
+Rework rate is the percentage of work that needs to be redone due to errors, misunderstandings, or changes in requirements - after things have been committed. It builds on PR review time and again how efficiently a team can deliver value without unnecessary rework.
+
 - Refine User Stories with Clearer Acceptance Criteria and Examples
 - Invest in Better Tooling and Automation for Testing
 - Implement a Robust Definition of Done (DoD) and Enforce It
@@ -684,9 +514,9 @@ Rework rate is the percentage of work that needs to be redone due to errors, mis
 - Promote Asynchronous Communication Tools & Practices
 - Implement a "Meeting Budget" or "Meeting Credit" System
 
-
 <!--
-Who spends more time on meetings than actually developing? Meeting load is the amount of time developers spend in meetings, which can significantly impact their productivity and focus. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+Who spends more time on meetings than actually developing? Meeting load is the amount of time developers spend in meetings, which can significantly impact their productivity and focus.
+
 - Implement a "Meeting-Free Day" (or Half-Day) Policy
 - Audit Meeting Invitations and Participation
 - Standardize Meeting Agendas and Timeboxing
@@ -700,13 +530,13 @@ Who spends more time on meetings than actually developing? Meeting load is the a
 
 - Provide Ready-to-Run Starter Projects/Templates
 - Automate Environment Setup and Onboarding
-- Simplify Code Contribution Process with Clear Guidelines and Tooling
-- Offer Short, Focused "First Contribution" Tasks (aka "Good First Issues")
+- Simplify Code Contribution with Clear Guidelines and Tooling
+- Offer Short, Focused "First Contribution" Tasks
 - Provide Active Mentorship and Support (paired with tooling)
 
-
 <!--
-New Hire Onboarding is probably the most impactful of these, especially in smaller teams, becaause it sets the tone for the new developer's experience. Time to first commit is the time it takes for a new developer to make their first meaningful contribution to the codebase. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+New Hire Onboarding is probably the most impactful of these, especially in smaller teams, becaause it sets the tone for the new developer's experience. Time to first commit is the time it takes for a new developer to make their first meaningful contribution to the codebase.
+
 - Provide Ready-to-Run Starter Projects/Templates
 - Automate Environment Setup and Onboarding
 - Simplify Code Contribution Process with Clear Guidelines and Tooling
@@ -719,16 +549,15 @@ New Hire Onboarding is probably the most impactful of these, especially in small
 ### Perceived Focus Time 💡
 
 - Optimize Build Times with Incremental Builds and Caching
-- Implement a "Quiet Period" During Deployments/Integrations
 - Prioritize and Reduce Notification Overload
 - Automate Repetitive Tasks with Scripting or Tools
 - Improve Error Messaging and Debugging Tools
 
 
 <!--
-Perceived Focus Time is the amount of uninterrupted time developers feel they have to work on their tasks without distractions. It is very subjective, but it is critical for productivity and job satisfaction. Here are 5 strategies that have been mentioned and how they would fit into this metric - with a focus on practical changes across tools, processes, and culture.
+Perceived Focus Time is the amount of uninterrupted time developers feel they have to work on their tasks without distractions. It is very subjective, but it is critical for productivity and job satisfaction.
+
 - Optimize Build Times with Incremental Builds and Caching
-- Implement a "Quiet Period" During Deployments/Integrations
 - Prioritize and Reduce Notification Overload
 - Automate Repetitive Tasks with Scripting or Tools
 - Improve Error Messaging and Debugging Tools
@@ -790,8 +619,12 @@ Perceived Focus Time is the amount of uninterrupted time developers feel they ha
     </div>
 </div>
 
+***These are suggested benchmarks only. Establish a baseline _then_ iterate.***
+
 <!--
-So here's a breakdown of these measurements, with some results to get started with. But it's important to establish a baseline, then iterate. Know where you are, so you know where you want to go, and how much room you may have for improvement. Discuss these with your teams - don't just decide and spring this on them. That's not very Practitioner-Centric, is it?
+So here's a breakdown of these measurements, with some results to get started with. But it's important to establish a baseline, then iterate. Know where you are, so you know where you want to go, and how much room you may have for improvement.
+
+Discuss these with your teams - don't just decide and spring this on them. That's not very Practitioner-Centric, is it?
 -->
 
 ---
@@ -807,7 +640,7 @@ So here's a breakdown of these measurements, with some results to get started wi
 
 <!--
 
-Remember, no framework is a silver bullet. The goal is continuous improvement, not judgment. Communicate the 'why', involve your team, focus on trends, and always combine quantitative data with qualitative human insights.
+Building a healthy measurement culture is foundational to the success of any DevEx initiative. These are some good things to keep in mind: Remember, no framework is a silver bullet. The goal is continuous improvement, not judgment. Communicate the 'why', involve your team, focus on trends, and always combine quantitative data with qualitative human insights.
 
 -->
 
@@ -852,8 +685,6 @@ layout: two-cols
 <p><img src="/images/devto.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog</p>
 <p><img src="/images/mastodon.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog@hachyderm.io</p>
 <p><img src="/images/www.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">jmeiss.me</p>
-<p style="text-decoration: line-through;"><img src="/images/twitter.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px;">@IAmJerdog</p>
-
 
 <!--
 
