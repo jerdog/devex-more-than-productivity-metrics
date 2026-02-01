@@ -105,7 +105,7 @@ image: "/images/slides/devex-integral-dev-lifecycle.jpg"
 ---
 
 <!--
-DevEx is such an integral part of the entire development lifecycle - not just if you're developing tools for use internally, choosing off-the-shelf tools to use, or creating products for other developers and companies to use. That means that the ease of use, reliability, how accessible and understandable documentation, how efficient the build processes are, the effectiveness of testing frameworks, and the smoothness of deployment procedures all have an impact on the overall dev experience.
+Because DevEx is such an integral part of the entire development lifecycle, it means that the ease of use, reliability, how accessible and understandable documentation, how efficient the build processes are, the effectiveness of testing frameworks, and the smoothness of deployment procedures all have an impact on the overall experience for a developer.
 
 So let's start with some definitions between Developer Experience and Developer Productivity.
 -->
@@ -130,7 +130,7 @@ layoutClass: gap-8
 
 ## Developer Productivity
 
-> "Developer productivity refers to the effectiveness and efficiency with which software developers produce high-quality code and complete projects.""
+> "...the effectiveness and efficiency with which software developers produce high-quality code and complete projects."
 
 - [LinearB](https://linearb.io/blog/developer-productivity)
 
@@ -162,7 +162,6 @@ layoutClass: gap-8
     <p class="text-slate-300">The daily journey: tools, processes, cognitive load, and flow state.</p>
   </div>
 </div>
-
 
 ::right::
 
@@ -671,20 +670,34 @@ I'll leave you with this, that DevEx is ruthlessly eliminating barriers (and blo
 layout: two-cols
 ---
 
-
 <div style="padding-top:200px; align-items: center; justify-content: center; margin: 0 auto; display: flex;">
 
   <h2>Thank you!</h2>
 
 </div>
 
+<div style="padding-top:100px; align-items: center; justify-content: center; margin: 0 auto; display: flex;">
+  <h4>🔬 Slides available at: speaking.jmeiss.me</h4>
+</div>
+
 ::right::
 
-<p><img src="/images/bluesky-logo.svg" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog.dev</p>
-<p><img src="/images/linkedin.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">/in/jeremymeiss</p>
-<p><img src="/images/devto.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog</p>
-<p><img src="/images/mastodon.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog@hachyderm.io</p>
-<p><img src="/images/www.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">jmeiss.me</p>
+<p>
+  <img src="/images/bluesky-logo.svg" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">
+  @jerdog.dev
+</p>
+<p>
+  <img src="/images/linkedin.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">/in/jeremymeiss
+</p>
+<p>
+  <img src="/images/devto.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog
+</p>
+<p>
+  <img src="/images/mastodon.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">@jerdog@hachyderm.io
+</p>
+<p>
+  <img src="/images/www.png" style="vertical-align: middle; display: inline; margin: 5px; max-height:50px; padding-right:10px">jmeiss.me
+</p>
 
 <!--
 
