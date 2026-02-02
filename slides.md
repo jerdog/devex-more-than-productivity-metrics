@@ -88,6 +88,7 @@ transition: slide-down
   <p style="font-weight: bold;">Director, DevEx & DevRel</p>
   <p class="text-sm italic">OneStream Software</p>
   <p style="font-weight: bold;">DevOpsDays KC Organizer</p>
+  <p style="font-weight: bold;">CDF Ambassador</p>
 
 </span>
 
