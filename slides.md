@@ -28,8 +28,9 @@ mdc: true
 # addons:
 #  - slidev-component-progress
 fonts:
-  - sans: News Cycle
-  - mono: Fira Code
+  sans: Roboto
+  serif: Roboto Slab
+  mono: Fira Code
 ## Current slide
 # apply unocss classes to the current slide
 class:

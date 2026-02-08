@@ -11,9 +11,9 @@
     "@slidev/cli": "latest",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
-    "slidev-component-progress": "^1.1.0",
+    "slidev-component-progress": "latest",
     "slidev-theme-the-unnamed": "latest",
-    "vue": "^3.5.18"
+    "vue": "latest"
   },
   "devDependencies": {
     "playwright-chromium": "latest",
