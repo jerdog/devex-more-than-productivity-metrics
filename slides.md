@@ -10,7 +10,7 @@ info: |
   ## Developer Experience is more than just Productivity metrics
   With everything changing in tech at a frenetic pace, the emphasis on developer productivity has overshadowed the true essence of developer experience (DevEx). While frameworks like SPACE, getDX, and DORA metrics provide valuable insights, they often miss the mark on capturing developers' real, day-to-day experiences using tools and services, instead focusing strictly on the bottom line for the company. Meanwhile, developers and practitioners are job-hopping more than ever.
   This talk will explore the origins and evolution of "developer experience," dissect popular frameworks, and advocate for a more balanced approach that values the practitioner's perspective. At the end we will set a path towards integrating top-down metrics with bottom-up feedback, ensuring an approach to developer experience that fosters innovation and satisfaction.
-conference: "FOSDEM26 - Testing & CD DevRoom"
+conference: "dev/nexus 2026"
 socialimg: /images/bluesky-jerdog-white.png
 # https://sli.dev/features/drawing
 drawings:
@@ -86,9 +86,10 @@ transition: slide-down
 
   ## Jeremy Meiss
 
-  <p style="font-weight: bold;">Director, DevEx & DevRel</p>
-  <p class="text-sm italic">OneStream Software</p>
+  <p style="font-weight: bold;">DevRel & DevEx Professional</p>
+  <p class="italic">Coming soon....</p>
   <p style="font-weight: bold;">DevOpsDays KC Organizer</p>
+  <p style="font-weight: bold;">CommunityDays KC Organizer</p>
   <p style="font-weight: bold;">CDF Ambassador</p>
 
 </span>
@@ -98,7 +99,7 @@ transition: slide-down
 ![alt text](/images/profile-pic.jpg){style="position: relative; margin: auto; width: 70%; border-radius: 15px 50px; "}
 
 <!--
-My name is Jeremy Meiss, and I am the Director of Developer Experience and Developer Relations at OneStream Software. I also help organize DevOpsDays Kansas City.
+My name is Jeremy Meiss, and I am starting a new gig soon that I'm really excited about. I also help organize DevOpsDays Kansas City AND CommunityDays Kansas City, and I'm a CDF Ambassador. I have a background in software development, DevRel, and DevEx, and I'm passionate about improving the developer experience for everyone.
 -->
 
 ---
@@ -366,13 +367,9 @@ Building a great Developer Experience is not accidental. It's built with the **d
 5. Dedicated "Bug Bash" Weeks or Sprints with Stakeholder Involvement
 
 <!--
-A core of DevEx (and DevOps, really) are fast, high-quality feedback loops:
+A core of DevEx (and DevOps, really) is fast, high-quality feedback loops:
 
-- Integrate visual regression testing into your CI/CD pipeline. Screenshots of key UI componentts at commit and compare them using tools like BackstopJS, Percy, and Applitools to name a few.
-- Integrate static analysis and linting tools (e.g., ESLint, SonarQube, Checkstyle) directly into developers' IDEs and as pre-commit hooks, like Husky and Conventional Commits for immediate feedback on code style violations, potential bugs, and security vulnerabilities before code is even committed to the repository.
-- Implement a robust monitoring system and adopt canary deployments (or other progressive delivery methods like feature flags), and measure those deployments over time.
-- Dedicate specific time slots (e.g., 1-2 hours daily) for mob programming or pair programming sessions, particularly when tackling complex features, refactoring, or debugging challenging issues. This provides immediate feedback from multiple developers, leading to better code quality, faster problem-solving, and knowledge sharing.
-- Schedule regular "bug bash" events (e.g., once per quarter) where the entire team, including developers, QA, product owners, and even stakeholders like customer support representatives, collaboratively test the software and report bugs. This provides diverse perspectives and uncovers issues that might be missed by automated testing or individual developers. Incentivize finding critical bugs.
+To ensure high-quality feedback loops, teams should **shift-left** by integrating static analysis and linting into the IDE and pre-commit hooks, complemented by **automated visual regression testing** within the CI/CD pipeline. Risk is further mitigated through **collaborative coding practices** like mob programming for complex tasks, periodic stakeholder-driven **"bug bashes,"** and the use of **canary deployments** with robust monitoring to protect the production environment.
 -->
 
 ---
@@ -388,11 +385,7 @@ A core of DevEx (and DevOps, really) are fast, high-quality feedback loops:
 <!--
 A few ways to implement "Low Cognitive Load" for your teams:
 
-- Implement and enforce consistent code style (e.g., using Prettier, ESLint, or equivalent for the team's languages) across all projects.
-- Make sure you utilize Version Control as well as the commit message hooks I mentioned to create uniform formats to help quickly grasp the purpose and context of past changes with needing to dig into code diffs to understand the "why" behind specific implementations.
-- Dedicate a small but consistent portion of each sprint (e.g., 10-20%) to addressing identified technical debt. Choose one or two high-impact areas to focus on during each iteration.
-- Establish a single source of truth for all project documentation (e.g., a well-organized wiki, a documentation platform like Read the Docs, or even well-structured READMEs in the repository), and encourage documentation as part of the workflow.
-- Develop a comprehensive suite of automated tests (unit, integration, end-to-end) that provide rapid feedback on code changes. Integrate testing into the CI/CD pipeline to ensure tests are run automatically on every commit.
+To reduce a lot of the cognitive load, teams should **standardize style and linting** while enforcing meaningful version control practices to ensure clarity. This foundation supports a robust **automated testing suite** and a culture of **incremental refactoring** to manage technical debt, all while keeping knowledge accessible through **centralized documentation**.
 -->
 
 ---
@@ -408,11 +401,7 @@ A few ways to implement "Low Cognitive Load" for your teams:
 <!--
 Improving 'Flow State' involves:
 
-- Replace generic "email everything" approaches and only notify for breaking CI builds directly impacting the feature being worked on, defer less critical updates.
-- Implement a code review process that prioritizes speed and constructive feedback, and enforce guidelines focusing on clarity, maintainability, and architectural consistency, and encourage reviewers to provide actionable suggestions, not just nitpicks.
-- Ensure everyone is working from the same baseline and standards by standardizing the development environments and provide pre-configured, containerized setups for each project.
-- Encourage teams to break work down into manageable chunks, with timeboxing techniques like the Pomodoro Technique (25 minutes of focused work, followed by a 5-minute break) - which can help maintain focus and prevent burnout. The structured approach can also help overcome procrastination.
-- Encourage developers to ask questions, admit mistakes, and experiment without fear of blame or punishment. Implement regular retrospectives to identify and address roadblocks to flow. Create a safe space to voice concerns regarding workflow. Actively work to resolve issues that developers bring up.
+To achieve a consistent flow state, teams should minimize cognitive load by **standardizing development environments** and using **high-signal notification systems** to filter out distractions. This environment is bolstered by **streamlined code reviews and structured timeboxing**, which allow developers to maintain deep focus within a culture of **psychological safety** that encourages open problem-solving.
 -->
 
 ---
