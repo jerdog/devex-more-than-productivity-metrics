@@ -327,7 +327,7 @@ In 2014 **DORA** established the gold standard for measuring DevOps pipeline hea
 
 Building on DORA, the **SPACE framework** introduced in 2021 a holistic, human-centric model, arguing that productivity is multi-dimensional, codifying the importance of satisfaction, well-being, and collaboration as critical components of **performance**.
 
-[click]2024: GetDX Core 4 Unifies for Business Impact
+2024: GetDX Core 4 Unifies for Business Impact
 To resolve market confusion (or create more?), in 2024 **GetDX Core 4** was created to be a practical, prescriptive framework seeking to unify concepts from DORA and SPACE and, most importantly, create a direct link between engineering efforts and tangible business outcomes like **ROI and revenue**.
 
 So comparing the different frameworks out there, they each have their own strengths and weaknesses, but largely focused on the business and its bottom line, and not the developer. Anyone using these frameworks, or heard of them?
@@ -691,7 +691,7 @@ layout: two-cols
 </p>
 
 <!--
-
+And a final thought - black lives matter, trans rights are human rights, love is love, abortion is healthcare, and fuck ICE.
 -->
 
 ---
