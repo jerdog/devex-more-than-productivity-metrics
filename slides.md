@@ -1,45 +1,28 @@
 ---
-# You can also start simply with 'default'
 theme: the-unnamed
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-#background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
 title: Developer Experience is more than just Productivity metrics
 info: |
   ## Developer Experience is more than just Productivity metrics
   With everything changing in tech at a frenetic pace, the emphasis on developer productivity has overshadowed the true essence of developer experience (DevEx). While frameworks like SPACE, getDX, and DORA metrics provide valuable insights, they often miss the mark on capturing developers' real, day-to-day experiences using tools and services, instead focusing strictly on the bottom line for the company. Meanwhile, developers and practitioners are job-hopping more than ever.
   This talk will explore the origins and evolution of "developer experience," dissect popular frameworks, and advocate for a more balanced approach that values the practitioner's perspective. At the end we will set a path towards integrating top-down metrics with bottom-up feedback, ensuring an approach to developer experience that fosters innovation and satisfaction.
-conference: "dev/nexus 2026"
+conference: "CDCon 2026 // #OSSummit NA 2026"
 socialimg: /images/bluesky-jerdog-white.png
-# https://sli.dev/features/drawing
 drawings:
   persist: false
 defaults:
   layout: center
-#  class: text-center
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# open graph
-# seoMeta:
-#  ogImage: https://cover.sli.dev
-# addons:
-#  - slidev-component-progress
 fonts:
   sans: Roboto
   serif: Roboto Slab
   mono: Fira Code
-## Current slide
-# apply unocss classes to the current slide
 class:
   - text-center
   - my-cool-content-on-the-left
 layout: image-right
 image: /images/slides/devex-iceberg.png
 backgroundSize: contain
-#layoutClass: openingH2
 ---
 
 # Developer Experience is more than just Productivity metrics{style="margin-top: 30%;"}
@@ -55,24 +38,7 @@ transition: fade
 # DevEx disasters...
 
 <!--
-We've all had that experience using a tool or service that was a disaster. It could be the worst deployment process you've ever seen, or the most painful codebase you've ever had to work with, or documentation that's so confusing it makes your head spin. Or maybe a combination of them… Who here knows what I’m talking about?
-
-There are also plenty of examples that we can point to that illustrate good developer experiences.
--->
-
----
-title: '--Heroku ftw'
-transition: slide-up
----
-
-```bash
-git push heroku main
-```
-
-![Heroku deploy button](/images/slides/heroku-deploy-button.png)
-
-<!--
-One that always comes to mind is Heroku. Heroku was long considered the gold standard for developer experience with a simple set of tools and a command-line interface that allowed developers to focus on building applications and delivering them to users. And that was it. Now of course, Heroku is still around (albeit not nearly as developer-centric as they formerly were, but that is changing), but it's not the only game in town. Anyone used Netlify, Vercel, etc.?
+We've all had that experience using a tool or service that was a disaster. It could be the worst deployment process you've ever seen, or the most painful codebase you've ever had to work with, or documentation that's so confusing it makes your head spin. Or maybe a combination of them… Who here knows what I'm talking about?
 -->
 
 ---
@@ -99,46 +65,7 @@ transition: slide-down
 ![alt text](/images/profile-pic.jpg){style="position: relative; margin: auto; width: 70%; border-radius: 15px 50px; "}
 
 <!--
-My name is Jeremy Meiss, and I am starting a new gig soon that I'm really excited about. I also help organize DevOpsDays Kansas City AND CommunityDays Kansas City, and I'm a CDF Ambassador. I have a background in software development, DevRel, and DevEx, and I'm passionate about improving the developer experience for everyone.
--->
-
----
-layout: image
-image: "/images/slides/devex-integral-dev-lifecycle.jpg"
----
-
-<!--
-Because DevEx is such an integral part of the entire development lifecycle, it means that the ease of use, reliability, how accessible and understandable documentation, how efficient the build processes are, the effectiveness of testing frameworks, and the smoothness of deployment procedures all have an impact on the overall experience for a developer.
-
-So let's start with some definitions between Developer Experience and Developer Productivity.
--->
-
----
-layout: two-cols-header
-class: text-center
-layoutClass: gap-8
----
-
-# Developer Experience vs Developer Productivity
-
-::left::
-
-## Developer Experience
-
->_"...the **journey** of developers as they learn and deploy technology, which if successful, focuses on eliminating obstacles that hinder a developer or practitioner from achieving success in their endeavors."
-
--**Jessica West**, Director of Education & Customer Experience (Chronosphere)
-
-::right::
-
-## Developer Productivity
-
-> "...the effectiveness and efficiency with which software developers produce high-quality code and complete projects."
-
-- [LinearB](https://linearb.io/blog/developer-productivity)
-
-<!--
-Developer Experience is the journey of developers as they learn and deploy technology, and Developer Productivity is how effective and efficient devs are at producing.
+I'm Jeremy Meiss - DevRel & DevEx professional, DevOpsDays KC and CommunityDays KC organizer, and CDF Ambassador.
 -->
 
 ---
@@ -178,45 +105,8 @@ layoutClass: gap-8
   </div>
 </div>
 
-
 <!--
-There is a subtle difference between Developer Experience and Developer Productivity, with the focus of DevProd being how effective and efficient developers are, while DevEx is about the experience developers have using tools and services - at its core it is about the practitioner. They aren't the same, but both do have some relation to each other - with Productivity being driven by the experience instead of the other way around. Dev Productivity is a metric, while DevEx is a feeling.
-
-Sustainable productivity isn't forced; it's a natural outcome of a superior Developer Experience (DevEx). DevEx is the leading indicator of success, focusing on the developer's lived reality, while productivity is the lagging indicator, measuring the ultimate business impact.
--->
-
----
-layout: image-left
-image: "/images/slides/cornell-devex.jpg"
-backgroundSize: contain
-class: my-cool-content-on-the-right
-title: "DevEx isn't new"
----
-
-## DevEx isn't new
-
-_REF: F. Fagerholm and J. Münch, "[Developer experience: Concept and definition](https://ieeexplore.ieee.org/document/6225984?arnumber=6225984)," 2012 International Conference on Software and System Process (ICSSP), Zurich, Switzerland, 2012._
-
-<!--
-But DevEx isn't a new thing. The first mention of "developer experience" as a concept was in a paper presented at the June 2012 IEEE International Conference on Software and System Process in Zurich. There are references in the paper going back to 1985 that deal with "programmer performance and the effects of the workplace." A few things stand out in this paper, which is a really great read.
--->
-
----
-layout: image-left
-image: /images/slides/cornell-devex.jpg
-backgroundSize: contain
-class: my-cool-content-on-the-right
-title: "DevEx isn't new"
----
-
-## DevEx isn't new
-
->"New ways of working such as globally distributed development or the integration of self-motivated external developers into software ecosystems will require a better and more comprehensive understanding of developers' feelings, perceptions, motivations and identification with their tasks in their respective project environments."
-
-_REF: F. Fagerholm and J. Münch, "[Developer experience: Concept and definition](https://ieeexplore.ieee.org/document/6225984?arnumber=6225984). 2012."_
-
-<!--
-The first is where it talked about these New ways of working where development was globally distributed and integrating self-motivated external developers into software ecosystems and would require a better and more comprehensive understanding of developers' feelings, perceptions, motivations and identification with their tasks in their respective project environments.
+DevEx and DevProd aren't the same. Productivity is driven by experience — DevEx is the leading indicator, productivity is the lagging one. You can't sustainably force productivity without first investing in the experience.
 -->
 
 ---
@@ -234,9 +124,7 @@ title: "DevEx isn't new"
 _REF: F. Fagerholm and J. Münch, "[Developer experience: Concept and definition](https://ieeexplore.ieee.org/document/6225984?arnumber=6225984). 2012."_
 
 <!--
-The second was this line, that DevEx could be a means for capturing how devs think and feel about their activities at work, and that improving their experience impacts things like sustained team and project performance.
-
-So all of this interest in DevEx isn't a new concept - but is largely driven by companies trying to sell you something, from the top down, with very little (if any) focus on developers themselves. That doesn't mean there isn't some good value to be had in these frameworks, but we need to be careful about how we use them, and how we think about them.
+DevEx isn't a new concept — it was formally defined in a 2012 IEEE paper. Capturing how developers think and feel about their work has measurable positive impacts on team performance. Yet most modern frameworks have drifted far from this practitioner-centric origin.
 -->
 
 ---
@@ -259,21 +147,7 @@ So all of this interest in DevEx isn't a new concept - but is largely driven by 
 </div>
 
 <!--
-For decades, engineering leaders grappled with measuring productivity, often relying on flawed metrics like lines of code - an easily gamed incentive that missed the bigger picture. Today, the focus has shifted to understanding the entire value stream, leading to sophisticated, research-backed frameworks that provide a holistic view of performance. A few of the more popular frameworks are DORA, SPACE, and GetDX Core 4.
--->
-
----
-class: text-center
----
-
-## Evolution of "Developer Experience" Frameworks
-
-![alt text](/images/slides/conversation-shift.png){style="width: 80%; height: auto; margin: auto;"}
-
-<!--
-These frameworks have shifted the conversation from pipeline metrics to holistic, business-aligned frameworks, shifting the audience from engineers to the C-suite. All of this is fine in and of itself, but this shift has put the focus on the business and not the developer, and has created a lot of confusion.
-
-Here's what we've seen with these measurement frameworks....
+For decades, engineering leaders grappled with measuring productivity — often relying on flawed metrics like lines of code. Today three prominent frameworks try to fill that gap: DORA, SPACE, and GetDX Core 4. But how well do they serve the actual developer?
 -->
 
 ---
@@ -323,14 +197,7 @@ Here's what we've seen with these measurement frameworks....
 </div>
 
 <!--
-In 2014 **DORA** established the gold standard for measuring DevOps pipeline health, priving that speed and stability are not trade-offs, providing engineering teams with a quantitative, evidence-backed language for **software delivery performance**.
-
-Building on DORA, the **SPACE framework** introduced in 2021 a holistic, human-centric model, arguing that productivity is multi-dimensional, codifying the importance of satisfaction, well-being, and collaboration as critical components of **performance**.
-
-2024: GetDX Core 4 Unifies for Business Impact
-To resolve market confusion (or create more?), in 2024 **GetDX Core 4** was created to be a practical, prescriptive framework seeking to unify concepts from DORA and SPACE and, most importantly, create a direct link between engineering efforts and tangible business outcomes like **ROI and revenue**.
-
-So comparing the different frameworks out there, they each have their own strengths and weaknesses, but largely focused on the business and its bottom line, and not the developer. Anyone using these frameworks, or heard of them?
+Notice who's missing: the developer. DORA optimizes pipelines. SPACE fosters management conversations. Core 4 speaks C-suite. Each framework has real value, but none was built primarily to improve the daily practitioner experience. That's the gap.
 -->
 
 ---
@@ -353,55 +220,7 @@ So comparing the different frameworks out there, they each have their own streng
 </div>
 
 <!--
-Building a great Developer Experience is not accidental. It's built with the **developer in mind**, and designed to minimize friction, reduce mental overhead, and enable deep, focused work. We'll dive into each of these a bit more with some actionable steps to implement them.
--->
-
----
-
-### Fast, High-Quality Feedback Loops
-
-1. Automated Visual Regression Testing in CI/CD
-2. "Shifting Left" with Static Code Analysis and Linting in the IDE & Pre-Commit Hooks
-3. Production "Canary" Deployments & Automated Monitoring with Meaningful Metrics
-4. Daily "Mob Programming" or Pair Programming Sessions for Critical/Complex Tasks
-5. Dedicated "Bug Bash" Weeks or Sprints with Stakeholder Involvement
-
-<!--
-A core of DevEx (and DevOps, really) is fast, high-quality feedback loops:
-
-To ensure high-quality feedback loops, teams should **shift-left** by integrating static analysis and linting into the IDE and pre-commit hooks, complemented by **automated visual regression testing** within the CI/CD pipeline. Risk is further mitigated through **collaborative coding practices** like mob programming for complex tasks, periodic stakeholder-driven **"bug bashes,"** and the use of **canary deployments** with robust monitoring to protect the production environment.
--->
-
----
-
-### Low Cognitive Load
-
-1. Standardize Code Style & Linting Rules
-2. Implement Version Control with Meaningful Commit Messages
-3. Prioritize and Refactor Technical Debt Incrementally
-4. Centralize Documentation and Knowledge Sharing
-5. Implement Automated Testing at All Levels
-
-<!--
-A few ways to implement "Low Cognitive Load" for your teams:
-
-To reduce a lot of the cognitive load, teams should **standardize style and linting** while enforcing meaningful version control practices to ensure clarity. This foundation supports a robust **automated testing suite** and a culture of **incremental refactoring** to manage technical debt, all while keeping knowledge accessible through **centralized documentation**.
--->
-
----
-
-### Enabled "Flow State"
-
-1. Implement a High-Signal Notification System & Prioritization
-2. Adopt a Streamlined Code Review Process with Contextual Tooling
-3. Standardize Development Environments and Automate Setup
-4. Implement Short, Focused "Pomodoro" or Timeboxing Sessions
-5. Cultivate a Culture of Psychological Safety and Open Communication
-
-<!--
-Improving 'Flow State' involves:
-
-To achieve a consistent flow state, teams should minimize cognitive load by **standardizing development environments** and using **high-signal notification systems** to filter out distractions. This environment is bolstered by **streamlined code reviews and structured timeboxing**, which allow developers to maintain deep focus within a culture of **psychological safety** that encourages open problem-solving.
+Building great DevEx means designing with the developer in mind: fast feedback loops, low cognitive load, and protected flow state. These three pillars are what our metrics should actually move.
 -->
 
 ---
@@ -434,124 +253,7 @@ If "number of commits" is incentivized, developers will simply make many small, 
 ***These are not one-size-fits-all metrics, but a starting point.***
 
 <!--
-Move from abstract to actionable. Use a balanced set of metrics that reflect the developer's daily reality and provide clear signals for improvement. Use them as **conversation starters**, not for judgment. These 6 metrics are probably a great starting point for a team to measure their developer experience, and can be used in conjunction with the frameworks we've discussed.
-
-But I want to stress that these are not a one-size-fits-all set of metrics, and should be tailored to the specific needs and context of your team. They are a starting point, not an end point.
--->
-
----
-
-### Cycle Time ⏱️
-
-- Implement and enforce "Small Batch" Size Approach
-- Invest in Test Automation and CI/CD Pipelines
-- Improve Dev Environment Setup and Standardization
-- Proactively Identify and Remove Blocking Issues
-
-<!--
-Cycle time is the time it takes to go from idea to production. It is a key measure of how quickly a team can deliver value.
-
-- Implement and enforce "Small Batch" Size Approach
-- Invest in Test Automation and CI/CD Pipelines
-- Improve Development Environment Setup and Standardization
-- Proactively Identify and Remove Blocking Issues and Dependencies
--->
-
----
-
-### PR Review Time 🔄
-
-- Enforce "Small PR" Guidelines and Automation
-- Implement a Reviewer Rotation and/or "Reviewer Roulette" System
-- Mandate Clear and Concise PR Descriptions and Context
-- Establish and Make Visible SLAs for PR Reviews
-
-<!--
-PR review time plays a part in cycle time, and is a key measurement of how quickly a team can deliver value, fixes, etc.
-
-- Enforce "Small PR" Guidelines and Automation
-- Implement a Reviewer Rotation and/or "Reviewer Roulette" System
-- Mandate Clear and Concise PR Descriptions and Context
-- Establish Service Level Agreements (SLAs) for PR Reviews and Make Them Visible
--->
-
----
-
-### Rework Rate ✍️
-
-- Refine User Stories with Clearer Acceptance Criteria and Examples
-- Invest in Better Tooling and Automation for Testing
-- Implement a Robust Definition of Done (DoD) and **Enforce** It
-- Improve Feedback Loops and Communication
-
-<!--
-Rework rate is the percentage of work that needs to be redone due to errors, misunderstandings, or changes in requirements - after things have been committed. It builds on PR review time and again how efficiently a team can deliver value without unnecessary rework.
-
-- Refine User Stories with Clearer Acceptance Criteria and Examples
-- Invest in Better Tooling and Automation for Testing
-- Implement a Robust Definition of Done (DoD) and Enforce It
-- Improve Feedback Loops and Communication
--->
-
----
-
-### Meeting Load 🧠
-
-
-- Implement a "Meeting-Free Day" (or Half-Day) Policy
-- Audit Meeting Invitations and Participation
-- Standardize Meeting Agendas and Timeboxing
-- Promote Asynchronous Communication Tools & Practices
-- Implement a "Meeting Budget" or "Meeting Credit" System
-
-<!--
-Who spends more time on meetings than actually developing? Meeting load is the amount of time developers spend in meetings, which can significantly impact their productivity and focus.
-
-- Implement a "Meeting-Free Day" (or Half-Day) Policy
-- Audit Meeting Invitations and Participation
-- Standardize Meeting Agendas and Timeboxing
-- Promote Asynchronous Communication Tools & Practices
-- Implement a "Meeting Budget" or "Meeting Credit" System
--->
-
----
-
-### Time to First Commit 🚀
-
-- Provide Ready-to-Run Starter Projects/Templates
-- Automate Environment Setup and Onboarding
-- Simplify Code Contribution with Clear Guidelines and Tooling
-- Offer Short, Focused "First Contribution" Tasks
-- Provide Active Mentorship and Support (paired with tooling)
-
-<!--
-New Hire Onboarding is probably the most impactful of these, especially in smaller teams, becaause it sets the tone for the new developer's experience. Time to first commit is the time it takes for a new developer to make their first meaningful contribution to the codebase.
-
-- Provide Ready-to-Run Starter Projects/Templates
-- Automate Environment Setup and Onboarding
-- Simplify Code Contribution Process with Clear Guidelines and Tooling
-- Offer Short, Focused "First Contribution" Tasks (aka "Good First Issues")
-- Provide Active Mentorship and Support (paired with tooling)
--->
-
----
-
-### Perceived Focus Time 💡
-
-- Optimize Build Times with Incremental Builds and Caching
-- Prioritize and Reduce Notification Overload
-- Automate Repetitive Tasks with Scripting or Tools
-- Improve Error Messaging and Debugging Tools
-
-
-<!--
-Perceived Focus Time is the amount of uninterrupted time developers feel they have to work on their tasks without distractions. It is very subjective, but it is critical for productivity and job satisfaction.
-
-- Optimize Build Times with Incremental Builds and Caching
-- Prioritize and Reduce Notification Overload
-- Automate Repetitive Tasks with Scripting or Tools
-- Improve Error Messaging and Debugging Tools
-
+These 6 metrics reflect the developer's daily reality. Use them as conversation starters, not scorecards. Cycle Time (commit to prod), PR Review (feedback speed), Rework Rate (signals unclear requirements), Meeting Load (time for deep work?), Time to First Commit (onboarding friction), Perceived Focus Time (uninterrupted time).
 -->
 
 ---
@@ -612,9 +314,7 @@ Perceived Focus Time is the amount of uninterrupted time developers feel they ha
 ***These are suggested benchmarks only. Establish a baseline _then_ iterate.***
 
 <!--
-So here's a breakdown of these measurements, with some results to get started with. But it's important to establish a baseline, then iterate. Know where you are, so you know where you want to go, and how much room you may have for improvement.
-
-Discuss these with your teams - don't just decide and spring this on them. That's not very Practitioner-Centric, is it?
+Here are starting benchmarks. Establish your baseline first, then decide where you want to go. Discuss these with your teams — don't spring them as mandates. That's not very practitioner-centric, is it?
 -->
 
 ---
@@ -629,9 +329,7 @@ Discuss these with your teams - don't just decide and spring this on them. That'
 - Combine quantitative data with qualitative human insights
 
 <!--
-
-Building a healthy measurement culture is foundational to the success of any DevEx initiative. These are some good things to keep in mind: Remember, no framework is a silver bullet. The goal is continuous improvement, not judgment. Communicate the 'why', involve your team, focus on trends, and always combine quantitative data with qualitative human insights.
-
+No framework is a silver bullet. Communicate the 'why', involve your team, focus on trends, and always pair quantitative data with human insights.
 -->
 
 ---
@@ -654,7 +352,7 @@ Investing in Developer Experience is a direct investment in your organization's 
 
 
 <!--
-I'll leave you with this, that DevEx is ruthlessly eliminating barriers (and blockers) that keep your practitioners from being successful.
+I'll leave you with this: DevEx is ruthlessly eliminating barriers that keep your practitioners from being successful.
 -->
 
 ---
