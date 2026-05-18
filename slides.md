@@ -13,6 +13,8 @@ defaults:
   layout: center
 transition: slide-left
 mdc: true
+addons:
+  - slidev-addon-qrcode
 fonts:
   sans: Roboto
   serif: Roboto Slab
@@ -197,7 +199,7 @@ For decades, engineering leaders grappled with measuring productivity — often 
 </div>
 
 <!--
-Notice who's missing: the developer. DORA optimizes pipelines. SPACE fosters management conversations. Core 4 speaks C-suite. Each framework has real value, but none was built primarily to improve the daily practitioner experience. That's the gap.
+DORA optimizes pipelines. SPACE fosters management conversations. Core 4 speaks C-suite. Notice who's missing: the developer. Each framework has real value, but none was built primarily to improve the daily practitioner experience. That's the gap.
 -->
 
 ---
@@ -234,9 +236,7 @@ Building great DevEx means designing with the developer in mind: fast feedback l
 -Goodhart's Law
 
 <!--
-The introduction of any measurement system carries the inherent risk of misuse. It is imperative that DevEx and productivity metrics are used as **tools** for systemic improvement, **not as instruments** for judging or ranking individual developers. When a metric becomes a target for performance evaluation, it ceases to be a good measure—a phenomenon known as Goodhart's Law.
-
-If "number of commits" is incentivized, developers will simply make many small, meaningless commits to inflate their score, degrading code history without adding value.
+The introduction of any measurement system carries the inherent risk of misuse - Goodhart's law speaks to that. It is imperative that DevEx and productivity metrics are used as **tools** for systemic improvement, **not as instruments** for judging or ranking individual developers. A good example of this are "number of commits" and "lines of code" as a metric - they're so easily gamed that they are effectively meaningless.
 -->
 
 ---
@@ -253,7 +253,13 @@ If "number of commits" is incentivized, developers will simply make many small, 
 ***These are not one-size-fits-all metrics, but a starting point.***
 
 <!--
-These 6 metrics reflect the developer's daily reality. Use them as conversation starters, not scorecards. Cycle Time (commit to prod), PR Review (feedback speed), Rework Rate (signals unclear requirements), Meeting Load (time for deep work?), Time to First Commit (onboarding friction), Perceived Focus Time (uninterrupted time).
+These 6 metrics reflect the dev's daily reality - they're conversation starters, not scorecards.
+- Cycle Time (commit to prod),
+- PR Review (feedback speed),
+- Rework Rate (signals unclear requirements),
+- Meeting Load (time for deep work?),
+- Time to First Commit (onboarding friction),
+- Perceived Focus Time (uninterrupted time).
 -->
 
 ---
@@ -314,7 +320,7 @@ These 6 metrics reflect the developer's daily reality. Use them as conversation 
 ***These are suggested benchmarks only. Establish a baseline _then_ iterate.***
 
 <!--
-Here are starting benchmarks. Establish your baseline first, then decide where you want to go. Discuss these with your teams — don't spring them as mandates. That's not very practitioner-centric, is it?
+So I'm proposing some starting measurements which do reflect some similar productivity metrics, or even compliment them. It's important to establish your baseline first, then decide where you want to go. Discuss these with your teams — don't spring them as mandates. That's not very practitioner-centric, is it?
 -->
 
 ---
@@ -329,7 +335,12 @@ Here are starting benchmarks. Establish your baseline first, then decide where y
 - Combine quantitative data with qualitative human insights
 
 <!--
-No framework is a silver bullet. Communicate the 'why', involve your team, focus on trends, and always pair quantitative data with human insights.
+Building a healthy measurement culture requires some intentional effort. Some key principles to keep in mind:
+- No framework is a silver bullet.
+- Communicate the 'why',
+- involve your team,
+- focus on trends,
+- and always pair quantitative data with human insights.
 -->
 
 ---
@@ -341,7 +352,7 @@ layout: statement
 ![alt text](/images/slides/bluesky-devex-culture-post.jpg){style="width: 75%; margin: auto;"}
 
 <!--
-Investing in Developer Experience is a direct investment in your organization's capacity to innovate.
+Investing in Developer Experience is a direct investment in your organization's willingness, and capacity, to innovate.
 -->
 
 ---
